@@ -28,7 +28,7 @@ const supportedTerms: string[] = [
 class Grammar {
     // Parser
     readonly lang: string;
-    readonly parser: Parser;
+    parser: Parser;
     languageObj: any;
     // Grammar
     readonly simpleTerms: { [sym: string]: string } = {};
@@ -38,7 +38,6 @@ class Grammar {
     constructor(lang: string) {
         // Parser
         this.lang = lang;
-        this.parser = new Parser();
 
         // Grammar
         const grammarPath = dirOfGrammars + this.lang + ".json";
@@ -55,6 +54,7 @@ class Grammar {
         if (!treeSitterWasAwaited) {
             await Parser.init();
         }
+        this.parser = new Parser();
         this.languageObj = await Parser.Language.load(`${dirOfParsers}/${this.lang}.wasm`);
         this.parser.setLanguage(this.languageObj);
     }
@@ -208,7 +208,7 @@ export async function activate(context: vscode.ExtensionContext) {
         // if the grammar doesn't exist then create it
         if (!(lang in grammars)) {
             grammars[lang] = new Grammar(lang);
-            grammars[lang].init()
+            await grammars[lang].init()
         }
         const uri = doc.uri.toString();
         trees[uri] = grammars[lang].parser.parse(doc.getText());

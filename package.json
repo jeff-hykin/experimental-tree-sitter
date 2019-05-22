@@ -44,18 +44,16 @@
 		"compile": "tsc -p ./",
 		"watch": "tsc -watch -p ./",
 		"postinstall": "node ./node_modules/vscode/bin/install",
-        "debug" : "npm run compile && npm run watch"
+		"debug": "npm run compile && npm run watch"
 	},
 	"dependencies": {
 		"jsonc-parser": "^2.1.0",
-		"tree-sitter": "^0.15.1",
 		"tree-sitter-c": "^0.13.13",
 		"tree-sitter-cpp": "^0.13.15",
-		"web-tree-sitter": "^0.15.1"
+		"web-tree-sitter": "^0.15.2"
 	},
 	"devDependencies": {
 		"@types/node": "^12.0.2",
-		"tree-sitter-cli": "^0.14.7",
 		"tslint": "^5.16.0",
 		"typescript": "^3.4.5",
 		"vsce": "^1.61.0",
