@@ -1,4 +1,4 @@
+node_modules
+out
 .DS_Store
-*.nosync*
-node_modules/
-.cache
+.vscode/ipch/

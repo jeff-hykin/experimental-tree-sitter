@@ -1,218 +1,306 @@
-import * as VS from 'vscode'
-import * as Parser from 'tree-sitter'
+import * as vscode from 'vscode';
+import * as Parser from 'web-tree-sitter';
+import * as jsonc from 'jsonc-parser';
+import { clearTimeout } from 'timers';
+import { readFileSync } from 'fs';
 
-// Be sure to declare the language in package.json and include a minimalist grammar.
-const languages: {[id: string]: {parser: Parser, color: ColorFunction}} = {
-	'go': createParser('tree-sitter-go', colorGo),
-	'typescript': createParser('tree-sitter-typescript', colorTypescript),
-	'cpp': createParser('tree-sitter-cpp', colorCpp),
-	'rust': createParser('tree-sitter-rust', colorRust),
+// dirs
+const dirOfParsers = '../language-parsers';
+const dirOfGrammars = __dirname + "/../language-grammars/";
+
+// misc
+let treeSitterWasAwaited = false
+// Syntax trees
+let trees: { [doc: string]: Parser.Tree } = {};
+
+// Languages
+const supportedLangs: string[] = ["cpp", "c", "python"];
+const grammars: { [lang: string]: Grammar } = {};
+
+// Term colors
+const supportedTerms: string[] = [
+    "type", "namespace", "function", "variable", "string", "number",
+    "punctuation", "comment", "keyword_constant", "keyword_directive",
+    "keyword_control", "keyword_operator", "storage_modifier",
+]
+
+// Grammar class
+class Grammar {
+    // Parser
+    readonly lang: string;
+    readonly parser: Parser;
+    languageObj: any;
+    // Grammar
+    readonly simpleTerms: { [sym: string]: string } = {};
+    readonly complexTerms: string[] = [];
+    readonly complexScopes: { [sym: string]: string } = {};
+
+    constructor(lang: string) {
+        // Parser
+        this.lang = lang;
+        this.parser = new Parser();
+
+        // Grammar
+        const grammarPath = dirOfGrammars + this.lang + ".json";
+        const grammarJson = jsonc.parse(readFileSync(grammarPath).toString());
+        for (const t in grammarJson.simpleTerms)
+            this.simpleTerms[t] = grammarJson.simpleTerms[t];
+        for (const t in grammarJson.complexTerms)
+            this.complexTerms[t] = grammarJson.complexTerms[t];
+        for (const t in grammarJson.complexScopes)
+            this.complexScopes[t] = grammarJson.complexScopes[t];
+    }
+    
+    async init() {
+        if (!treeSitterWasAwaited) {
+            await Parser.init();
+        }
+        this.languageObj = await Parser.Language.load(`${dirOfParsers}/${this.lang}.wasm`);
+        this.parser.setLanguage(this.languageObj);
+    }
 }
 
-function colorGo(x: Parser.SyntaxNode, editor: VS.TextEditor) {
-	var types: VS.Range[] = []
-	var fields: VS.Range[] = []
-	var functions: VS.Range[] = []
-	function scan(x: Parser.SyntaxNode) {
-		if (!isVisible(x, editor)) return
-		if (x.type == 'identifier' && x.parent != null && x.parent.type == 'function_declaration') {
-			functions.push(range(x))
-		} else if (x.type == 'type_identifier') {
-			types.push(range(x))
-		} else if (x.type == 'field_identifier') {
-			fields.push(range(x))
-		}
-		for (let child of x.children) {
-			scan(child)
-		}
-	}
-	scan(x)
+// Extension activation
+export async function activate(context: vscode.ExtensionContext) {
 
-	return {types, fields, functions}
+    // Decoration definitions
+    const highlightDecors: { [color: string]: vscode.TextEditorDecorationType } = {};
+    for (const c of supportedTerms)
+        highlightDecors[c] = vscode.window.
+            createTextEditorDecorationType({
+                color: new vscode.ThemeColor("syntax." + c)
+            });
+    // Decoration cache
+    const decorCache: { [doc: string]: { [color: string]: vscode.Range[] } } = {};
+
+    // Timer to schedule decoration update and refresh
+    let updateTimer: NodeJS.Timer | undefined = undefined;
+    let refreshTimer: NodeJS.Timer | undefined = undefined;
+    console.log('Syntax Highlighter has been activated');
+
+    let visibleEditors = vscode.window.visibleTextEditors;
+    let visibleUris: string[] = [];
+    let refreshUris: string[] = [];
+
+    function refreshDecor() {
+        for (const eachEditor of visibleEditors)
+        {
+            const uri = eachEditor.document.uri.toString();
+            if (!refreshUris.includes(uri))
+                continue;
+            if (!(uri in decorCache))
+                continue;
+            const decorations = decorCache[uri];
+            for (const eachTerm in decorations)
+                eachEditor.setDecorations(highlightDecors[eachTerm], decorations[eachTerm]);
+        }
+        refreshUris = [];
+     }
+
+    function enqueueDecorRefresh() {
+        if (refreshTimer) {
+            clearTimeout(refreshTimer);
+            refreshTimer = undefined;
+        }
+        refreshTimer = setTimeout(refreshDecor, 20);
+    }
+
+    function buildDecor(doc: vscode.TextDocument) {
+        const uri = doc.uri.toString();
+        if (!(uri in trees))
+            return;
+        const grammar = grammars[doc.languageId];
+
+        // Decorations
+        let decorations: { [color: string]: vscode.Range[] } = {};
+        for (const eachTerm in highlightDecors)
+            decorations[eachTerm] = [];
+
+        // Travel tree and make decorations
+        let stack: Parser.SyntaxNode[] = [];
+        let node = trees[uri].rootNode.firstChild;
+        while (stack.length > 0 || node) {
+            // Go deeper
+            if (node) {
+                stack.push(node);
+                node = node.firstChild;
+            }
+            // Go back
+            else {
+                node = stack.pop();
+                let type = node.type;
+                if (!node.isNamed)
+                    type = '"' + type + '"';
+
+                // Simple one-level terms
+                let color: string | undefined = undefined;
+                if (!grammar.complexTerms.includes(type)) {
+                    color = grammar.simpleTerms[type];
+                }
+                // Complex terms require multi-level analyzes
+                else {
+                    // Build complex scopes
+                    let desc = type;
+                    let scopes = [desc];
+                    let parent = node.parent;
+                    for (let i = 0; i < 2; i++ && parent) {
+                        let parentType = parent.type;
+                        if (!parent.isNamed)
+                            parentType = '"' + parentType + '"';
+                        desc = parentType + " > " + desc;
+                        scopes.push(desc);
+                        parent = parent.parent;
+                    }
+                    // Use most complex scope
+                    for (let d of scopes)
+                        if (d in grammar.complexScopes)
+                            color = grammar.complexScopes[d];
+                }
+
+                // If term is found add decoration
+                if (color in highlightDecors) {
+                    decorations[color].push(new vscode.Range(
+                        new vscode.Position(
+                            node.startPosition.row,
+                            node.startPosition.column),
+                        new vscode.Position(
+                            node.endPosition.row,
+                            node.endPosition.column)));
+                }
+
+                // Go right
+                node = node.nextSibling
+            }
+        }
+
+        // Cache and refresh decorations
+        decorCache[uri] = decorations;
+        if (!refreshUris.includes(uri))
+            refreshUris.push(uri);
+    }
+
+    function updateDecor() {
+        for (const eachEditor of visibleEditors) {
+            const uri = eachEditor.document.uri.toString();
+            if (!(uri in trees))
+                continue;
+            if (uri in decorCache)
+                continue;
+            buildDecor(eachEditor.document);
+        }
+        if (refreshUris.length > 0)
+            enqueueDecorRefresh();
+    }
+
+    function enqueueDecorUpdate() {
+        if (updateTimer) {
+            clearTimeout(updateTimer);
+            updateTimer = undefined;
+        }
+        updateTimer = setTimeout(updateDecor, 20);
+    }
+
+    async function initTree(doc: vscode.TextDocument) {
+        const lang = doc.languageId;
+        // if the language isn't supported, then do nothing
+        if (!supportedLangs.includes(lang))
+            return;
+        // if the grammar doesn't exist then create it
+        if (!(lang in grammars)) {
+            grammars[lang] = new Grammar(lang);
+            grammars[lang].init()
+        }
+        const uri = doc.uri.toString();
+        trees[uri] = grammars[lang].parser.parse(doc.getText());
+    }
+
+    function updateTree(doc: vscode.TextDocument, edits: Parser.Edit[]) {
+        const uri = doc.uri.toString();
+        const lang = doc.languageId;
+        if (!(uri in trees))
+            return;
+
+        // Update tree
+        for (const e of edits)
+            trees[uri].edit(e);
+        trees[uri] = grammars[lang].parser.parse(doc.getText(), trees[uri])
+
+        // Invalidate decoration cache and enqueue update
+        delete decorCache[uri];
+        if (visibleUris.includes(uri))
+            enqueueDecorUpdate();
+    }
+
+    for (const doc of vscode.workspace.textDocuments)
+        await initTree(doc);
+    enqueueDecorUpdate();
+
+    vscode.workspace.onDidOpenTextDocument(async doc => {
+        await initTree(doc);
+    }, null, context.subscriptions)
+
+    vscode.workspace.onDidCloseTextDocument(doc => {
+        const uri = doc.uri.toString();
+        delete trees[uri];
+        delete decorCache[uri];
+        if (refreshUris.includes(uri))
+            refreshUris.splice(refreshUris.indexOf(uri), 1);
+    }, null, context.subscriptions)
+
+    vscode.workspace.onDidChangeTextDocument(event => {
+        const uri = event.document.uri.toString();
+        if (!(uri in trees))
+            return;
+        if (event.contentChanges.length < 1)
+            return;
+
+        let changes: Parser.Edit[] = [];
+        for (const c of event.contentChanges) {
+            const startPos0 = c.range.start;
+            const startIndex0 = event.document.offsetAt(startPos0);
+            const endPos0 = c.range.end;
+            const endIndex0 = startIndex0 + c.rangeLength;
+            const endIndex1 = startIndex0 + c.text.length;
+            const endPos1 = event.document.positionAt(endIndex1);
+
+            changes.push({
+                startIndex: startIndex0,
+                oldEndIndex: endIndex0,
+                newEndIndex: endIndex1,
+                startPosition: { row: startPos0.line, column: startPos0.character },
+                oldEndPosition: { row: endPos0.line, column: endPos0.character },
+                newEndPosition: { row: endPos1.line, column: endPos1.character }
+            });
+        }
+
+        updateTree(event.document, changes);
+    }, null, context.subscriptions);
+
+    vscode.window.onDidChangeVisibleTextEditors(editors => {
+        // Flag refresh for new editors
+        let needUpdate = false;
+        for (const e of editors) {
+            const uri = e.document.uri.toString();
+            if (visibleEditors.includes(e))
+                continue;
+            if (!refreshUris.includes(uri))
+                refreshUris.push(uri);
+            if (uri in trees)
+                needUpdate = true;
+        }
+
+        // Set visible editors
+        visibleEditors = editors;
+        visibleUris = [];
+        for (const e of visibleEditors) {
+            const uri = e.document.uri.toString();
+            if (!visibleUris.includes(uri))
+                visibleUris.push(uri);
+        }
+
+        // Enqueue refresh if required
+        if (needUpdate)
+            enqueueDecorUpdate();
+    }, null, context.subscriptions);
+
 }
-
-function colorTypescript(x: Parser.SyntaxNode, editor: VS.TextEditor) {
-	var types: VS.Range[] = []
-	var fields: VS.Range[] = []
-	var functions: VS.Range[] = []
-	function scan(x: Parser.SyntaxNode) {
-		if (!isVisible(x, editor)) return
-		if (x.type == 'identifier' && x.parent != null && x.parent.type == 'function') {
-			functions.push(range(x))
-		} else if (x.type == 'type_identifier' || x.type == 'predefined_type') {
-			types.push(range(x))
-		} else if (x.type == 'property_identifier') {
-			fields.push(range(x))
-		}
-		for (let child of x.children) {
-			scan(child)
-		}
-	}
-	scan(x)
-
-	return {types, fields, functions}
-}
-
-function colorRust(x: Parser.SyntaxNode, editor: VS.TextEditor) {
-	var types: VS.Range[] = []
-	var fields: VS.Range[] = []
-	var functions: VS.Range[] = []
-	function scan(x: Parser.SyntaxNode) {
-		if (!isVisible(x, editor)) return
-		if (x.type == 'identifier' && x.parent != null && x.parent.type == 'function_item' && x.parent.parent != null && x.parent.parent.type == 'declaration_list') {
-			fields.push(range(x))
-		} else if (x.type == 'identifier' && x.parent != null && x.parent.type == 'function_item') {
-			functions.push(range(x))
-		} else if (x.type == 'identifier' && x.parent != null && x.parent.type == 'scoped_identifier' && x.parent.parent != null && x.parent.parent.type == 'function_declarator') {
-			functions.push(range(x))
-		} else if (x.type == 'type_identifier' || x.type == 'primitive_type') {
-			types.push(range(x))
-		} else if (x.type == 'field_identifier') {
-			fields.push(range(x))
-		}
-		for (let child of x.children) {
-			scan(child)
-		}
-	}
-	scan(x)
-
-	return {types, fields, functions}
-}
-
-function colorCpp(x: Parser.SyntaxNode, editor: VS.TextEditor) {
-	var types: VS.Range[] = []
-	var fields: VS.Range[] = []
-	var functions: VS.Range[] = []
-	function scan(x: Parser.SyntaxNode) {
-		if (!isVisible(x, editor)) return
-		if (x.type == 'identifier' && x.parent != null && x.parent.type == 'function_declarator') {
-			functions.push(range(x))
-		} else if (x.type == 'identifier' && x.parent != null && x.parent.type == 'scoped_identifier' && x.parent.parent != null && x.parent.parent.type == 'function_declarator') {
-			functions.push(range(x))
-		} else if (x.type == 'type_identifier') {
-			types.push(range(x))
-		} else if (x.type == 'field_identifier') {
-			fields.push(range(x))
-		}
-		for (let child of x.children) {
-			scan(child)
-		}
-	}
-	scan(x)
-
-	return {types, fields, functions}
-}
-
-function isVisible(x: Parser.SyntaxNode, editor: VS.TextEditor) {
-	for (let visible of editor.visibleRanges) {
-		const overlap = x.startPosition.row <= visible.end.line+1 && visible.start.line-1 <= x.endPosition.row
-		if (overlap) return true
-	}
-	return false
-}
-
-function range(x: Parser.SyntaxNode): VS.Range {
-	return new VS.Range(x.startPosition.row, x.startPosition.column, x.endPosition.row, x.endPosition.column)
-}
-
-type ColorFunction = (x: Parser.SyntaxNode, editor: VS.TextEditor) => {types: VS.Range[], fields: VS.Range[], functions: VS.Range[]}
-
-function createParser(module: string, color: ColorFunction): {parser: Parser, color: ColorFunction} {
-	const lang = require(module)
-	const parser = new Parser()
-	parser.setLanguage(lang)
-	return {parser, color}
-}
-
-// Called when the extension is first activated by user opening a file with the appropriate language
-export function activate(context: VS.ExtensionContext) {
-	console.log("Activating tree-sitter...")
-	// Parse of all visible documents
-	const trees: {[uri: string]: Parser.Tree} = {}
-	function open(editor: VS.TextEditor) {
-		const {parser} = languages[editor.document.languageId]
-		if (parser != null) {
-			const t = parser.parse(editor.document.getText()) // TODO don't use getText, use Parser.Input
-			trees[editor.document.uri.toString()] = t
-			colorUri(editor.document.uri)
-		}
-	}
-	function edit(edit: VS.TextDocumentChangeEvent) {
-		const {parser} = languages[edit.document.languageId]
-		if (parser != null) {
-			updateTree(parser, edit)
-			colorUri(edit.document.uri)
-		}
-	}
-	function updateTree(parser: Parser, edit: VS.TextDocumentChangeEvent) {
-		if (edit.contentChanges.length == 0) return
-		const old = trees[edit.document.uri.toString()]
-		const startIndex = Math.min(...edit.contentChanges.map(getStartIndex))
-		const oldEndIndex = Math.max(...edit.contentChanges.map(getOldEndIndex))
-		const newEndIndex = Math.max(...edit.contentChanges.map(getNewEndIndex))
-		const startPos = edit.document.positionAt(startIndex)
-		const oldEndPos = edit.document.positionAt(oldEndIndex)
-		const newEndPos = edit.document.positionAt(newEndIndex)
-		const startPosition = asPoint(startPos)
-		const oldEndPosition = asPoint(oldEndPos)
-		const newEndPosition = asPoint(newEndPos)
-		const delta = {startIndex, oldEndIndex, newEndIndex, startPosition, oldEndPosition, newEndPosition}
-		// console.log(edit.document.uri.toString(), delta)
-		old.edit(delta)
-		const t = parser.parse(edit.document.getText(), old) // TODO don't use getText, use Parser.Input
-		trees[edit.document.uri.toString()] = t
-	}
-	function getStartIndex(edit: VS.TextDocumentContentChangeEvent): number {
-		return edit.rangeOffset
-	}
-	function getOldEndIndex(edit: VS.TextDocumentContentChangeEvent): number {
-		return edit.rangeOffset + edit.rangeLength
-	}
-	function getNewEndIndex(edit: VS.TextDocumentContentChangeEvent): number {
-		return edit.rangeOffset + edit.text.length
-	}
-	function asPoint(pos: VS.Position): Parser.Point {
-		return {row: pos.line, column: pos.character}
-	}
-	function close(doc: VS.TextDocument) {
-		if (doc.languageId == 'go') {
-			delete trees[doc.uri.toString()]
-		}
-	}
-	// Apply themeable colors
-	const typeStyle = VS.window.createTextEditorDecorationType({
-        color: new VS.ThemeColor('treeSitter.type')
-	})
-	const fieldStyle = VS.window.createTextEditorDecorationType({
-        color: new VS.ThemeColor('treeSitter.field')
-	})
-	const functionStyle = VS.window.createTextEditorDecorationType({
-        color: new VS.ThemeColor('treeSitter.function')
-	})
-	function colorUri(uri: VS.Uri) {
-		for (let editor of VS.window.visibleTextEditors) {
-			if (editor.document.uri == uri) {
-				colorEditor(editor)
-			}
-		}
-	}
-	function colorEditor(editor: VS.TextEditor) {
-		const t = trees[editor.document.uri.toString()]
-		if (t == null) return;
-		const {color} = languages[editor.document.languageId]
-		if (color == null) return;
-		const {types, fields, functions} = color(t.rootNode, editor)
-		editor.setDecorations(typeStyle, types)
-		editor.setDecorations(fieldStyle, fields)
-		editor.setDecorations(functionStyle, functions)
-		// console.log(t.rootNode.toString())
-	}
-	VS.window.visibleTextEditors.forEach(open)
-	context.subscriptions.push(VS.window.onDidChangeVisibleTextEditors(editors => editors.forEach(open)))
-	context.subscriptions.push(VS.workspace.onDidChangeTextDocument(edit))
-	context.subscriptions.push(VS.workspace.onDidCloseTextDocument(close))
-	context.subscriptions.push(VS.window.onDidChangeTextEditorVisibleRanges(change => colorEditor(change.textEditor)))
-}
-
-// this method is called when your extension is deactivated
-export function deactivate() {}
