@@ -41,11 +41,8 @@ Parser.init().then(()=>{
         }
         async init() {
             console.log(`init `)
-            console.log(`creating parser`)
             this.parser = new Parser()
-            console.log(`awaiting languageObj`)
             this.languageObj = await Parser.Language.load(`/Users/jeffhykin/Nextcloud/Programming/tree-sitter/language-parsers/cpp.wasm`)
-            console.log(`setting language`)
             this.parser.setLanguage(this.languageObj)
         }
     }
@@ -184,7 +181,6 @@ Parser.init().then(()=>{
             }
             const uri = doc.uri.toString()
             trees[uri] = grammars[lang].parser.parse(doc.getText())
-            console.log(`end initTree`)
         }
         function updateTree(doc, edits) {
             console.log(`updateTree`)
