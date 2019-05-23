@@ -1,0 +1,25 @@
+---
+supported_languages:
+    - c
+    - cpp
+    - css
+    - go
+    - html
+    - javascript
+    - python
+    - ruby
+    - typescript
+supported_terms:
+    - type
+    - namespace
+    - function
+    - variable
+    - string
+    - number
+    - punctuation
+    - comment
+    - keyword_constant
+    - keyword_directive
+    - keyword_control
+    - keyword_operator
+    - storage_modifier

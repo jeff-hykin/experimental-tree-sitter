@@ -1,18 +1,20 @@
 {
-	"name": "syntax-highlighter",
-	"displayName": "Syntax Highlighter",
+	"name": "experimental-tree-sitter",
+	"displayName": "Experimental Tree Sitter",
 	"description": "Syntax highlighting based on Tree-sitter",
-	"homepage": "https://github.com/EvgeniyPeshkov/syntax-highlighter",
-	"version": "0.1.0",
-	"publisher": "evgeniypeshkov",
+	"homepage": "https://github.com/jeff-hykin/tree-sitter",
+	"version": "0.1.1",
+	"publisher": "jeff-hykin",
 	"license": "MIT",
 	"icon": "images/syntax.png",
 	"repository": {
-		"url": "https://github.com/EvgeniyPeshkov/syntax-highlighter"
+		"url": "https://github.com/jeff-hykin/tree-sitter"
 	},
-	"author": {
-		"name": "Evgeniy Peshkov",
-		"email": "peshkov.e@outlook.com"
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"debug": "echo debugging"
 	},
 	"categories": [
 		"Programming Languages",
@@ -38,18 +40,20 @@
 		"onLanguage:c",
 		"onLanguage:cpp"
 	],
-	"main": "./out/extension.js",
-	"scripts": {
-		"vscode:prepublish": "npm run compile",
-		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./",
-		"postinstall": "node ./node_modules/vscode/bin/install",
-		"debug": "npm run compile && npm run watch"
-	},
+	"main": "./extension.js",
 	"dependencies": {
+		"cson": "^5.1.0",
+		"js-yaml": "^3.13.1",
 		"jsonc-parser": "^2.1.0",
 		"tree-sitter-c": "^0.13.13",
 		"tree-sitter-cpp": "^0.13.15",
+		"tree-sitter-css": "^0.13.7",
+		"tree-sitter-go": "^0.13.3",
+		"tree-sitter-html": "^0.13.5",
+		"tree-sitter-javascript": "^0.13.10",
+		"tree-sitter-python": "^0.14.0",
+		"tree-sitter-ruby": "^0.13.14",
+		"tree-sitter-typescript": "^0.13.6",
 		"web-tree-sitter": "^0.15.2"
 	},
 	"devDependencies": {
@@ -179,5 +183,6 @@
 				}
 			}
 		]
-	}
+	},
+	"enableProposedApi": true
 }
