@@ -6,15 +6,27 @@ const jsonc = require("jsonc-parser")
 const timers = require("timers")
 const fs = require("fs")
 
-Parser.init().then(()=>{
+let loadYaml = (relativePath) => yaml.safeLoad(fs.readFileSync(__dirname + "/"+ relativePath, 'utf-8'))
 
-    let info = yaml.safeLoad(fs.readFileSync(__dirname + "/info.yaml", 'utf-8'))
+Parser.init().then(()=>{
+    let info = loadYaml("info.yaml")
+    
+    try {
+        // TODO: get the theme from the user's settings
+        var theme = loadYaml("themes/XD Theme.yaml")
+        // TODO:
+        //   pull out the theme colors and instead create a mapping from scopes to colors
+        //   then using that create a function that takes a [stdtag, currentColor] as input and returns a color as output
+    } catch (e) {
+        // if there is no theme then there's no point
+        return
+    }
+    console.log(`theme is:`,theme)
 
     // dirs
     const dirOfParsers = './language-parsers/'
     const dirOfGrammars = __dirname + "/language-mappings/"
-    // misc
-    let treeSitterWasAwaited = false
+    const dirOfMappers  = './language-mappers/'
     // Syntax trees
     const supportedLangs = info.supported_languages
     const supportedTerms = info.supported_terms
@@ -23,14 +35,16 @@ Parser.init().then(()=>{
 
     // Grammar class
     class Grammar {
-        constructor(lang) {
+        constructor(languageName) {
             // Grammar
             this.simpleTerms = {}
             this.complexTerms = []
             this.complexScopes = {}
-            this.lang = lang
+            this.languageName = languageName
+            this.converter = require(dirOfMappers+this.languageName)
             // Grammar
-            const grammarPath = dirOfGrammars + this.lang + ".json"
+            // TODO: remove this to test out the stdtag system
+            const grammarPath = dirOfGrammars + this.languageName + ".json"
             const grammarJson = jsonc.parse(fs.readFileSync(grammarPath).toString())
             for (const t in grammarJson.simpleTerms)
                 this.simpleTerms[t] = grammarJson.simpleTerms[t]
@@ -45,15 +59,20 @@ Parser.init().then(()=>{
             this.languageObj = await Parser.Language.load(`/Users/jeffhykin/Nextcloud/Programming/tree-sitter/language-parsers/cpp.wasm`)
             this.parser.setLanguage(this.languageObj)
         }
+        
+        // TODO: start using this with the decorators
+        convertTermToStdTag(...args) {
+            return this.converter(...args)
+        }
     }
     // Extension activation
     async function activate(context) {
         console.log(`activate`)
         // Decoration definitions
         const highlightDecors = {}
-        for (const c of supportedTerms)
-            highlightDecors[c] = vscode.window.createTextEditorDecorationType({
-                color: new vscode.ThemeColor("syntax." + c)
+        for (const eachTerm of supportedTerms)
+            highlightDecors[eachTerm] = vscode.window.createTextEditorDecorationType({
+                color: new vscode.ThemeColor("syntax." + eachTerm)
             })
         // Decoration cache
         const decorCache = {}
@@ -98,7 +117,9 @@ Parser.init().then(()=>{
             // Travel tree and make decorations
             let stack = []
             let node = trees[uri].rootNode.firstChild
+            let scope = []
             while (stack.length > 0 || node) {
+                node && console.log(`node.type is:`,node.type)
                 // Go deeper
                 if (node) {
                     stack.push(node)

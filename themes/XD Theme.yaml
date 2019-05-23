@@ -1,0 +1,5 @@
+scopes:
+    "#8080FF":
+        - [control, directive] # color the control directives purple
+    "#f79a32":
+        - [storage] # color the storage words orange
