@@ -2,8 +2,8 @@
 	"name": "experimental-tree-sitter",
 	"displayName": "Experimental Tree Sitter",
 	"description": "Syntax highlighting based on Tree-sitter",
-	"homepage": "https://github.com/jeff-hykin/tree-sitter",
-	"version": "0.1.1",
+	"homepage": "https://github.com/jeff-hykin/experimental-tree-sitter",
+	"version": "0.2.0",
 	"publisher": "jeff-hykin",
 	"license": "MIT",
 	"icon": "images/syntax.png",
@@ -12,7 +12,7 @@
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
-		"compile": "",
+		"compile": "echo compile",
 		"postinstall": "node ./node_modules/vscode/bin/install",
 		"debug": "echo debugging"
 	},
@@ -42,9 +42,11 @@
 	],
 	"main": "./extension.js",
 	"dependencies": {
-		"cson": "^5.1.0",
 		"js-yaml": "^3.13.1",
 		"jsonc-parser": "^2.1.0",
+		"web-tree-sitter": "^0.15.2"
+	},
+	"devDependencies": {
 		"tree-sitter-c": "^0.13.13",
 		"tree-sitter-cpp": "^0.13.15",
 		"tree-sitter-css": "^0.13.7",
@@ -54,12 +56,6 @@
 		"tree-sitter-python": "^0.14.0",
 		"tree-sitter-ruby": "^0.13.14",
 		"tree-sitter-typescript": "^0.13.6",
-		"web-tree-sitter": "^0.15.2"
-	},
-	"devDependencies": {
-		"@types/node": "^12.0.2",
-		"tslint": "^5.16.0",
-		"typescript": "^3.4.5",
 		"vsce": "^1.61.0",
 		"vscode": "^1.1.34"
 	},
@@ -183,6 +179,5 @@
 				}
 			}
 		]
-	},
-	"enableProposedApi": true
+	}
 }
