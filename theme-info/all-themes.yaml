@@ -1,0 +1,5017 @@
+---
+vs-seti-icon-theme.json:
+  information_for_contributors:
+  - This file has been generated from data in https://github.com/jesseweed/seti-ui
+  - "- icon definitions: https://github.com/jesseweed/seti-ui/blob/master/styles/_fonts/seti.less"
+  - "- icon colors: https://github.com/jesseweed/seti-ui/blob/master/styles/ui-variables.less"
+  - "- file associations: https://github.com/jesseweed/seti-ui/blob/master/styles/components/icons/mapping.less"
+  - If you want to provide a fix or improvement, please create a pull request against
+    the jesseweed/seti-ui repository.
+  - Once accepted there, we are happy to receive an update request.
+  fonts:
+  - id: seti
+    src:
+    - path: "./seti.woff"
+      format: woff
+    weight: normal
+    style: normal
+    size: 150%
+  iconDefinitions:
+    _R_light:
+      fontCharacter: "\\E001"
+      fontColor: "#498ba7"
+    _R:
+      fontCharacter: "\\E001"
+      fontColor: "#519aba"
+    _argdown_light:
+      fontCharacter: "\\E003"
+      fontColor: "#498ba7"
+    _argdown:
+      fontCharacter: "\\E003"
+      fontColor: "#519aba"
+    _asm_light:
+      fontCharacter: "\\E004"
+      fontColor: "#b8383d"
+    _asm:
+      fontCharacter: "\\E004"
+      fontColor: "#cc3e44"
+    _audio_light:
+      fontCharacter: "\\E005"
+      fontColor: "#9068b0"
+    _audio:
+      fontCharacter: "\\E005"
+      fontColor: "#a074c4"
+    _babel_light:
+      fontCharacter: "\\E006"
+      fontColor: "#b7b73b"
+    _babel:
+      fontCharacter: "\\E006"
+      fontColor: "#cbcb41"
+    _bower_light:
+      fontCharacter: "\\E007"
+      fontColor: "#cc6d2e"
+    _bower:
+      fontCharacter: "\\E007"
+      fontColor: "#e37933"
+    _bsl_light:
+      fontCharacter: "\\E008"
+      fontColor: "#b8383d"
+    _bsl:
+      fontCharacter: "\\E008"
+      fontColor: "#cc3e44"
+    _c_light:
+      fontCharacter: "\\E00A"
+      fontColor: "#498ba7"
+    _c:
+      fontCharacter: "\\E00A"
+      fontColor: "#519aba"
+    _c-sharp_light:
+      fontCharacter: "\\E009"
+      fontColor: "#498ba7"
+    _c-sharp:
+      fontCharacter: "\\E009"
+      fontColor: "#519aba"
+    _c_1_light:
+      fontCharacter: "\\E00A"
+      fontColor: "#9068b0"
+    _c_1:
+      fontCharacter: "\\E00A"
+      fontColor: "#a074c4"
+    _c_2_light:
+      fontCharacter: "\\E00A"
+      fontColor: "#b7b73b"
+    _c_2:
+      fontCharacter: "\\E00A"
+      fontColor: "#cbcb41"
+    _cake_light:
+      fontCharacter: "\\E00B"
+      fontColor: "#b8383d"
+    _cake:
+      fontCharacter: "\\E00B"
+      fontColor: "#cc3e44"
+    _cake_php_light:
+      fontCharacter: "\\E00C"
+      fontColor: "#b8383d"
+    _cake_php:
+      fontCharacter: "\\E00C"
+      fontColor: "#cc3e44"
+    _clock_light:
+      fontCharacter: "\\E010"
+      fontColor: "#498ba7"
+    _clock:
+      fontCharacter: "\\E010"
+      fontColor: "#519aba"
+    _clock_1_light:
+      fontCharacter: "\\E010"
+      fontColor: "#627379"
+    _clock_1:
+      fontCharacter: "\\E010"
+      fontColor: "#6d8086"
+    _clojure_light:
+      fontCharacter: "\\E011"
+      fontColor: "#7fae42"
+    _clojure:
+      fontCharacter: "\\E011"
+      fontColor: "#8dc149"
+    _clojure_1_light:
+      fontCharacter: "\\E011"
+      fontColor: "#498ba7"
+    _clojure_1:
+      fontCharacter: "\\E011"
+      fontColor: "#519aba"
+    _code-climate_light:
+      fontCharacter: "\\E012"
+      fontColor: "#7fae42"
+    _code-climate:
+      fontCharacter: "\\E012"
+      fontColor: "#8dc149"
+    _coffee_light:
+      fontCharacter: "\\E013"
+      fontColor: "#b7b73b"
+    _coffee:
+      fontCharacter: "\\E013"
+      fontColor: "#cbcb41"
+    _coldfusion_light:
+      fontCharacter: "\\E015"
+      fontColor: "#498ba7"
+    _coldfusion:
+      fontCharacter: "\\E015"
+      fontColor: "#519aba"
+    _config_light:
+      fontCharacter: "\\E016"
+      fontColor: "#627379"
+    _config:
+      fontCharacter: "\\E016"
+      fontColor: "#6d8086"
+    _cpp_light:
+      fontCharacter: "\\E017"
+      fontColor: "#498ba7"
+    _cpp:
+      fontCharacter: "\\E017"
+      fontColor: "#519aba"
+    _cpp_1_light:
+      fontCharacter: "\\E017"
+      fontColor: "#9068b0"
+    _cpp_1:
+      fontCharacter: "\\E017"
+      fontColor: "#a074c4"
+    _crystal_light:
+      fontCharacter: "\\E018"
+      fontColor: "#bfc2c1"
+    _crystal:
+      fontCharacter: "\\E018"
+      fontColor: "#d4d7d6"
+    _crystal_embedded_light:
+      fontCharacter: "\\E019"
+      fontColor: "#bfc2c1"
+    _crystal_embedded:
+      fontCharacter: "\\E019"
+      fontColor: "#d4d7d6"
+    _css_light:
+      fontCharacter: "\\E01A"
+      fontColor: "#498ba7"
+    _css:
+      fontCharacter: "\\E01A"
+      fontColor: "#519aba"
+    _csv_light:
+      fontCharacter: "\\E01B"
+      fontColor: "#7fae42"
+    _csv:
+      fontCharacter: "\\E01B"
+      fontColor: "#8dc149"
+    _d_light:
+      fontCharacter: "\\E01C"
+      fontColor: "#b8383d"
+    _d:
+      fontCharacter: "\\E01C"
+      fontColor: "#cc3e44"
+    _db_light:
+      fontCharacter: "\\E01D"
+      fontColor: "#dd4b78"
+    _db:
+      fontCharacter: "\\E01D"
+      fontColor: "#f55385"
+    _default_light:
+      fontCharacter: "\\E01E"
+      fontColor: "#bfc2c1"
+    _default:
+      fontCharacter: "\\E01E"
+      fontColor: "#d4d7d6"
+    _docker_light:
+      fontCharacter: "\\E020"
+      fontColor: "#498ba7"
+    _docker:
+      fontCharacter: "\\E020"
+      fontColor: "#519aba"
+    _docker_1_light:
+      fontCharacter: "\\E020"
+      fontColor: "#455155"
+    _docker_1:
+      fontCharacter: "\\E020"
+      fontColor: "#4d5a5e"
+    _docker_2_light:
+      fontCharacter: "\\E020"
+      fontColor: "#7fae42"
+    _docker_2:
+      fontCharacter: "\\E020"
+      fontColor: "#8dc149"
+    _docker_3_light:
+      fontCharacter: "\\E020"
+      fontColor: "#dd4b78"
+    _docker_3:
+      fontCharacter: "\\E020"
+      fontColor: "#f55385"
+    _ejs_light:
+      fontCharacter: "\\E022"
+      fontColor: "#b7b73b"
+    _ejs:
+      fontCharacter: "\\E022"
+      fontColor: "#cbcb41"
+    _elixir_light:
+      fontCharacter: "\\E023"
+      fontColor: "#9068b0"
+    _elixir:
+      fontCharacter: "\\E023"
+      fontColor: "#a074c4"
+    _elixir_script_light:
+      fontCharacter: "\\E024"
+      fontColor: "#9068b0"
+    _elixir_script:
+      fontCharacter: "\\E024"
+      fontColor: "#a074c4"
+    _elm_light:
+      fontCharacter: "\\E025"
+      fontColor: "#498ba7"
+    _elm:
+      fontCharacter: "\\E025"
+      fontColor: "#519aba"
+    _eslint_light:
+      fontCharacter: "\\E027"
+      fontColor: "#9068b0"
+    _eslint:
+      fontCharacter: "\\E027"
+      fontColor: "#a074c4"
+    _eslint_1_light:
+      fontCharacter: "\\E027"
+      fontColor: "#455155"
+    _eslint_1:
+      fontCharacter: "\\E027"
+      fontColor: "#4d5a5e"
+    _ethereum_light:
+      fontCharacter: "\\E028"
+      fontColor: "#498ba7"
+    _ethereum:
+      fontCharacter: "\\E028"
+      fontColor: "#519aba"
+    _f-sharp_light:
+      fontCharacter: "\\E029"
+      fontColor: "#498ba7"
+    _f-sharp:
+      fontCharacter: "\\E029"
+      fontColor: "#519aba"
+    _favicon_light:
+      fontCharacter: "\\E02A"
+      fontColor: "#b7b73b"
+    _favicon:
+      fontCharacter: "\\E02A"
+      fontColor: "#cbcb41"
+    _firebase_light:
+      fontCharacter: "\\E02B"
+      fontColor: "#cc6d2e"
+    _firebase:
+      fontCharacter: "\\E02B"
+      fontColor: "#e37933"
+    _firefox_light:
+      fontCharacter: "\\E02C"
+      fontColor: "#cc6d2e"
+    _firefox:
+      fontCharacter: "\\E02C"
+      fontColor: "#e37933"
+    _font_light:
+      fontCharacter: "\\E02E"
+      fontColor: "#b8383d"
+    _font:
+      fontCharacter: "\\E02E"
+      fontColor: "#cc3e44"
+    _git_light:
+      fontCharacter: "\\E02F"
+      fontColor: "#3b4b52"
+    _git:
+      fontCharacter: "\\E02F"
+      fontColor: "#41535b"
+    _go_light:
+      fontCharacter: "\\E033"
+      fontColor: "#498ba7"
+    _go:
+      fontCharacter: "\\E033"
+      fontColor: "#519aba"
+    _go2_light:
+      fontCharacter: "\\E034"
+      fontColor: "#498ba7"
+    _go2:
+      fontCharacter: "\\E034"
+      fontColor: "#519aba"
+    _gradle_light:
+      fontCharacter: "\\E035"
+      fontColor: "#7fae42"
+    _gradle:
+      fontCharacter: "\\E035"
+      fontColor: "#8dc149"
+    _grails_light:
+      fontCharacter: "\\E036"
+      fontColor: "#7fae42"
+    _grails:
+      fontCharacter: "\\E036"
+      fontColor: "#8dc149"
+    _grunt_light:
+      fontCharacter: "\\E037"
+      fontColor: "#cc6d2e"
+    _grunt:
+      fontCharacter: "\\E037"
+      fontColor: "#e37933"
+    _gulp_light:
+      fontCharacter: "\\E038"
+      fontColor: "#b8383d"
+    _gulp:
+      fontCharacter: "\\E038"
+      fontColor: "#cc3e44"
+    _haml_light:
+      fontCharacter: "\\E03A"
+      fontColor: "#b8383d"
+    _haml:
+      fontCharacter: "\\E03A"
+      fontColor: "#cc3e44"
+    _haskell_light:
+      fontCharacter: "\\E03B"
+      fontColor: "#9068b0"
+    _haskell:
+      fontCharacter: "\\E03B"
+      fontColor: "#a074c4"
+    _haxe_light:
+      fontCharacter: "\\E03C"
+      fontColor: "#cc6d2e"
+    _haxe:
+      fontCharacter: "\\E03C"
+      fontColor: "#e37933"
+    _haxe_1_light:
+      fontCharacter: "\\E03C"
+      fontColor: "#b7b73b"
+    _haxe_1:
+      fontCharacter: "\\E03C"
+      fontColor: "#cbcb41"
+    _haxe_2_light:
+      fontCharacter: "\\E03C"
+      fontColor: "#498ba7"
+    _haxe_2:
+      fontCharacter: "\\E03C"
+      fontColor: "#519aba"
+    _haxe_3_light:
+      fontCharacter: "\\E03C"
+      fontColor: "#9068b0"
+    _haxe_3:
+      fontCharacter: "\\E03C"
+      fontColor: "#a074c4"
+    _heroku_light:
+      fontCharacter: "\\E03D"
+      fontColor: "#9068b0"
+    _heroku:
+      fontCharacter: "\\E03D"
+      fontColor: "#a074c4"
+    _hex_light:
+      fontCharacter: "\\E03E"
+      fontColor: "#b8383d"
+    _hex:
+      fontCharacter: "\\E03E"
+      fontColor: "#cc3e44"
+    _html_light:
+      fontCharacter: "\\E03F"
+      fontColor: "#cc6d2e"
+    _html:
+      fontCharacter: "\\E03F"
+      fontColor: "#e37933"
+    _html_erb_light:
+      fontCharacter: "\\E040"
+      fontColor: "#b8383d"
+    _html_erb:
+      fontCharacter: "\\E040"
+      fontColor: "#cc3e44"
+    _ignored_light:
+      fontCharacter: "\\E041"
+      fontColor: "#3b4b52"
+    _ignored:
+      fontCharacter: "\\E041"
+      fontColor: "#41535b"
+    _illustrator_light:
+      fontCharacter: "\\E042"
+      fontColor: "#b7b73b"
+    _illustrator:
+      fontCharacter: "\\E042"
+      fontColor: "#cbcb41"
+    _image_light:
+      fontCharacter: "\\E043"
+      fontColor: "#9068b0"
+    _image:
+      fontCharacter: "\\E043"
+      fontColor: "#a074c4"
+    _info_light:
+      fontCharacter: "\\E044"
+      fontColor: "#498ba7"
+    _info:
+      fontCharacter: "\\E044"
+      fontColor: "#519aba"
+    _ionic_light:
+      fontCharacter: "\\E045"
+      fontColor: "#498ba7"
+    _ionic:
+      fontCharacter: "\\E045"
+      fontColor: "#519aba"
+    _jade_light:
+      fontCharacter: "\\E046"
+      fontColor: "#b8383d"
+    _jade:
+      fontCharacter: "\\E046"
+      fontColor: "#cc3e44"
+    _java_light:
+      fontCharacter: "\\E047"
+      fontColor: "#b8383d"
+    _java:
+      fontCharacter: "\\E047"
+      fontColor: "#cc3e44"
+    _javascript_light:
+      fontCharacter: "\\E048"
+      fontColor: "#b7b73b"
+    _javascript:
+      fontCharacter: "\\E048"
+      fontColor: "#cbcb41"
+    _javascript_1_light:
+      fontCharacter: "\\E048"
+      fontColor: "#cc6d2e"
+    _javascript_1:
+      fontCharacter: "\\E048"
+      fontColor: "#e37933"
+    _javascript_2_light:
+      fontCharacter: "\\E048"
+      fontColor: "#498ba7"
+    _javascript_2:
+      fontCharacter: "\\E048"
+      fontColor: "#519aba"
+    _jenkins_light:
+      fontCharacter: "\\E049"
+      fontColor: "#b8383d"
+    _jenkins:
+      fontCharacter: "\\E049"
+      fontColor: "#cc3e44"
+    _jinja_light:
+      fontCharacter: "\\E04A"
+      fontColor: "#b8383d"
+    _jinja:
+      fontCharacter: "\\E04A"
+      fontColor: "#cc3e44"
+    _json_light:
+      fontCharacter: "\\E04C"
+      fontColor: "#b7b73b"
+    _json:
+      fontCharacter: "\\E04C"
+      fontColor: "#cbcb41"
+    _json_1_light:
+      fontCharacter: "\\E04C"
+      fontColor: "#7fae42"
+    _json_1:
+      fontCharacter: "\\E04C"
+      fontColor: "#8dc149"
+    _julia_light:
+      fontCharacter: "\\E04D"
+      fontColor: "#9068b0"
+    _julia:
+      fontCharacter: "\\E04D"
+      fontColor: "#a074c4"
+    _karma_light:
+      fontCharacter: "\\E04E"
+      fontColor: "#7fae42"
+    _karma:
+      fontCharacter: "\\E04E"
+      fontColor: "#8dc149"
+    _kotlin_light:
+      fontCharacter: "\\E04F"
+      fontColor: "#cc6d2e"
+    _kotlin:
+      fontCharacter: "\\E04F"
+      fontColor: "#e37933"
+    _less_light:
+      fontCharacter: "\\E050"
+      fontColor: "#498ba7"
+    _less:
+      fontCharacter: "\\E050"
+      fontColor: "#519aba"
+    _license_light:
+      fontCharacter: "\\E051"
+      fontColor: "#b7b73b"
+    _license:
+      fontCharacter: "\\E051"
+      fontColor: "#cbcb41"
+    _license_1_light:
+      fontCharacter: "\\E051"
+      fontColor: "#cc6d2e"
+    _license_1:
+      fontCharacter: "\\E051"
+      fontColor: "#e37933"
+    _license_2_light:
+      fontCharacter: "\\E051"
+      fontColor: "#b8383d"
+    _license_2:
+      fontCharacter: "\\E051"
+      fontColor: "#cc3e44"
+    _liquid_light:
+      fontCharacter: "\\E052"
+      fontColor: "#7fae42"
+    _liquid:
+      fontCharacter: "\\E052"
+      fontColor: "#8dc149"
+    _livescript_light:
+      fontCharacter: "\\E053"
+      fontColor: "#498ba7"
+    _livescript:
+      fontCharacter: "\\E053"
+      fontColor: "#519aba"
+    _lock_light:
+      fontCharacter: "\\E054"
+      fontColor: "#7fae42"
+    _lock:
+      fontCharacter: "\\E054"
+      fontColor: "#8dc149"
+    _lua_light:
+      fontCharacter: "\\E055"
+      fontColor: "#498ba7"
+    _lua:
+      fontCharacter: "\\E055"
+      fontColor: "#519aba"
+    _makefile_light:
+      fontCharacter: "\\E056"
+      fontColor: "#cc6d2e"
+    _makefile:
+      fontCharacter: "\\E056"
+      fontColor: "#e37933"
+    _makefile_1_light:
+      fontCharacter: "\\E056"
+      fontColor: "#9068b0"
+    _makefile_1:
+      fontCharacter: "\\E056"
+      fontColor: "#a074c4"
+    _makefile_2_light:
+      fontCharacter: "\\E056"
+      fontColor: "#627379"
+    _makefile_2:
+      fontCharacter: "\\E056"
+      fontColor: "#6d8086"
+    _makefile_3_light:
+      fontCharacter: "\\E056"
+      fontColor: "#498ba7"
+    _makefile_3:
+      fontCharacter: "\\E056"
+      fontColor: "#519aba"
+    _markdown_light:
+      fontCharacter: "\\E057"
+      fontColor: "#498ba7"
+    _markdown:
+      fontCharacter: "\\E057"
+      fontColor: "#519aba"
+    _maven_light:
+      fontCharacter: "\\E058"
+      fontColor: "#b8383d"
+    _maven:
+      fontCharacter: "\\E058"
+      fontColor: "#cc3e44"
+    _mdo_light:
+      fontCharacter: "\\E059"
+      fontColor: "#b8383d"
+    _mdo:
+      fontCharacter: "\\E059"
+      fontColor: "#cc3e44"
+    _mustache_light:
+      fontCharacter: "\\E05A"
+      fontColor: "#cc6d2e"
+    _mustache:
+      fontCharacter: "\\E05A"
+      fontColor: "#e37933"
+    _npm_light:
+      fontCharacter: "\\E05C"
+      fontColor: "#3b4b52"
+    _npm:
+      fontCharacter: "\\E05C"
+      fontColor: "#41535b"
+    _npm_1_light:
+      fontCharacter: "\\E05C"
+      fontColor: "#b8383d"
+    _npm_1:
+      fontCharacter: "\\E05C"
+      fontColor: "#cc3e44"
+    _npm_ignored_light:
+      fontCharacter: "\\E05D"
+      fontColor: "#3b4b52"
+    _npm_ignored:
+      fontCharacter: "\\E05D"
+      fontColor: "#41535b"
+    _nunjucks_light:
+      fontCharacter: "\\E05E"
+      fontColor: "#7fae42"
+    _nunjucks:
+      fontCharacter: "\\E05E"
+      fontColor: "#8dc149"
+    _ocaml_light:
+      fontCharacter: "\\E05F"
+      fontColor: "#cc6d2e"
+    _ocaml:
+      fontCharacter: "\\E05F"
+      fontColor: "#e37933"
+    _odata_light:
+      fontCharacter: "\\E060"
+      fontColor: "#cc6d2e"
+    _odata:
+      fontCharacter: "\\E060"
+      fontColor: "#e37933"
+    _pdf_light:
+      fontCharacter: "\\E061"
+      fontColor: "#b8383d"
+    _pdf:
+      fontCharacter: "\\E061"
+      fontColor: "#cc3e44"
+    _perl_light:
+      fontCharacter: "\\E062"
+      fontColor: "#498ba7"
+    _perl:
+      fontCharacter: "\\E062"
+      fontColor: "#519aba"
+    _photoshop_light:
+      fontCharacter: "\\E063"
+      fontColor: "#498ba7"
+    _photoshop:
+      fontCharacter: "\\E063"
+      fontColor: "#519aba"
+    _php_light:
+      fontCharacter: "\\E064"
+      fontColor: "#9068b0"
+    _php:
+      fontCharacter: "\\E064"
+      fontColor: "#a074c4"
+    _powershell_light:
+      fontCharacter: "\\E065"
+      fontColor: "#498ba7"
+    _powershell:
+      fontCharacter: "\\E065"
+      fontColor: "#519aba"
+    _pug_light:
+      fontCharacter: "\\E067"
+      fontColor: "#b8383d"
+    _pug:
+      fontCharacter: "\\E067"
+      fontColor: "#cc3e44"
+    _puppet_light:
+      fontCharacter: "\\E068"
+      fontColor: "#b7b73b"
+    _puppet:
+      fontCharacter: "\\E068"
+      fontColor: "#cbcb41"
+    _python_light:
+      fontCharacter: "\\E069"
+      fontColor: "#498ba7"
+    _python:
+      fontCharacter: "\\E069"
+      fontColor: "#519aba"
+    _react_light:
+      fontCharacter: "\\E06B"
+      fontColor: "#498ba7"
+    _react:
+      fontCharacter: "\\E06B"
+      fontColor: "#519aba"
+    _rollup_light:
+      fontCharacter: "\\E06C"
+      fontColor: "#b8383d"
+    _rollup:
+      fontCharacter: "\\E06C"
+      fontColor: "#cc3e44"
+    _ruby_light:
+      fontCharacter: "\\E06D"
+      fontColor: "#b8383d"
+    _ruby:
+      fontCharacter: "\\E06D"
+      fontColor: "#cc3e44"
+    _rust_light:
+      fontCharacter: "\\E06E"
+      fontColor: "#627379"
+    _rust:
+      fontCharacter: "\\E06E"
+      fontColor: "#6d8086"
+    _salesforce_light:
+      fontCharacter: "\\E06F"
+      fontColor: "#498ba7"
+    _salesforce:
+      fontCharacter: "\\E06F"
+      fontColor: "#519aba"
+    _sass_light:
+      fontCharacter: "\\E070"
+      fontColor: "#dd4b78"
+    _sass:
+      fontCharacter: "\\E070"
+      fontColor: "#f55385"
+    _sbt_light:
+      fontCharacter: "\\E071"
+      fontColor: "#498ba7"
+    _sbt:
+      fontCharacter: "\\E071"
+      fontColor: "#519aba"
+    _scala_light:
+      fontCharacter: "\\E072"
+      fontColor: "#b8383d"
+    _scala:
+      fontCharacter: "\\E072"
+      fontColor: "#cc3e44"
+    _shell_light:
+      fontCharacter: "\\E075"
+      fontColor: "#455155"
+    _shell:
+      fontCharacter: "\\E075"
+      fontColor: "#4d5a5e"
+    _slim_light:
+      fontCharacter: "\\E076"
+      fontColor: "#cc6d2e"
+    _slim:
+      fontCharacter: "\\E076"
+      fontColor: "#e37933"
+    _smarty_light:
+      fontCharacter: "\\E077"
+      fontColor: "#b7b73b"
+    _smarty:
+      fontCharacter: "\\E077"
+      fontColor: "#cbcb41"
+    _spring_light:
+      fontCharacter: "\\E078"
+      fontColor: "#7fae42"
+    _spring:
+      fontCharacter: "\\E078"
+      fontColor: "#8dc149"
+    _stylelint_light:
+      fontCharacter: "\\E079"
+      fontColor: "#bfc2c1"
+    _stylelint:
+      fontCharacter: "\\E079"
+      fontColor: "#d4d7d6"
+    _stylelint_1_light:
+      fontCharacter: "\\E079"
+      fontColor: "#455155"
+    _stylelint_1:
+      fontCharacter: "\\E079"
+      fontColor: "#4d5a5e"
+    _stylus_light:
+      fontCharacter: "\\E07A"
+      fontColor: "#7fae42"
+    _stylus:
+      fontCharacter: "\\E07A"
+      fontColor: "#8dc149"
+    _sublime_light:
+      fontCharacter: "\\E07B"
+      fontColor: "#cc6d2e"
+    _sublime:
+      fontCharacter: "\\E07B"
+      fontColor: "#e37933"
+    _svg_light:
+      fontCharacter: "\\E07C"
+      fontColor: "#9068b0"
+    _svg:
+      fontCharacter: "\\E07C"
+      fontColor: "#a074c4"
+    _svg_1_light:
+      fontCharacter: "\\E07C"
+      fontColor: "#498ba7"
+    _svg_1:
+      fontCharacter: "\\E07C"
+      fontColor: "#519aba"
+    _swift_light:
+      fontCharacter: "\\E07D"
+      fontColor: "#cc6d2e"
+    _swift:
+      fontCharacter: "\\E07D"
+      fontColor: "#e37933"
+    _terraform_light:
+      fontCharacter: "\\E07E"
+      fontColor: "#9068b0"
+    _terraform:
+      fontCharacter: "\\E07E"
+      fontColor: "#a074c4"
+    _tex_light:
+      fontCharacter: "\\E07F"
+      fontColor: "#498ba7"
+    _tex:
+      fontCharacter: "\\E07F"
+      fontColor: "#519aba"
+    _tex_1_light:
+      fontCharacter: "\\E07F"
+      fontColor: "#b7b73b"
+    _tex_1:
+      fontCharacter: "\\E07F"
+      fontColor: "#cbcb41"
+    _tex_2_light:
+      fontCharacter: "\\E07F"
+      fontColor: "#cc6d2e"
+    _tex_2:
+      fontCharacter: "\\E07F"
+      fontColor: "#e37933"
+    _tex_3_light:
+      fontCharacter: "\\E07F"
+      fontColor: "#bfc2c1"
+    _tex_3:
+      fontCharacter: "\\E07F"
+      fontColor: "#d4d7d6"
+    _todo:
+      fontCharacter: "\\E081"
+    _twig_light:
+      fontCharacter: "\\E082"
+      fontColor: "#7fae42"
+    _twig:
+      fontCharacter: "\\E082"
+      fontColor: "#8dc149"
+    _typescript_light:
+      fontCharacter: "\\E083"
+      fontColor: "#498ba7"
+    _typescript:
+      fontCharacter: "\\E083"
+      fontColor: "#519aba"
+    _typescript_1_light:
+      fontCharacter: "\\E083"
+      fontColor: "#b7b73b"
+    _typescript_1:
+      fontCharacter: "\\E083"
+      fontColor: "#cbcb41"
+    _vala_light:
+      fontCharacter: "\\E084"
+      fontColor: "#627379"
+    _vala:
+      fontCharacter: "\\E084"
+      fontColor: "#6d8086"
+    _video_light:
+      fontCharacter: "\\E085"
+      fontColor: "#dd4b78"
+    _video:
+      fontCharacter: "\\E085"
+      fontColor: "#f55385"
+    _vue_light:
+      fontCharacter: "\\E086"
+      fontColor: "#7fae42"
+    _vue:
+      fontCharacter: "\\E086"
+      fontColor: "#8dc149"
+    _wasm_light:
+      fontCharacter: "\\E087"
+      fontColor: "#9068b0"
+    _wasm:
+      fontCharacter: "\\E087"
+      fontColor: "#a074c4"
+    _wat_light:
+      fontCharacter: "\\E088"
+      fontColor: "#9068b0"
+    _wat:
+      fontCharacter: "\\E088"
+      fontColor: "#a074c4"
+    _webpack_light:
+      fontCharacter: "\\E089"
+      fontColor: "#498ba7"
+    _webpack:
+      fontCharacter: "\\E089"
+      fontColor: "#519aba"
+    _wgt_light:
+      fontCharacter: "\\E08A"
+      fontColor: "#498ba7"
+    _wgt:
+      fontCharacter: "\\E08A"
+      fontColor: "#519aba"
+    _windows_light:
+      fontCharacter: "\\E08B"
+      fontColor: "#498ba7"
+    _windows:
+      fontCharacter: "\\E08B"
+      fontColor: "#519aba"
+    _word_light:
+      fontCharacter: "\\E08C"
+      fontColor: "#498ba7"
+    _word:
+      fontCharacter: "\\E08C"
+      fontColor: "#519aba"
+    _xls_light:
+      fontCharacter: "\\E08D"
+      fontColor: "#7fae42"
+    _xls:
+      fontCharacter: "\\E08D"
+      fontColor: "#8dc149"
+    _xml_light:
+      fontCharacter: "\\E08E"
+      fontColor: "#cc6d2e"
+    _xml:
+      fontCharacter: "\\E08E"
+      fontColor: "#e37933"
+    _yarn_light:
+      fontCharacter: "\\E08F"
+      fontColor: "#498ba7"
+    _yarn:
+      fontCharacter: "\\E08F"
+      fontColor: "#519aba"
+    _yml_light:
+      fontCharacter: "\\E090"
+      fontColor: "#9068b0"
+    _yml:
+      fontCharacter: "\\E090"
+      fontColor: "#a074c4"
+    _zip_light:
+      fontCharacter: "\\E091"
+      fontColor: "#b8383d"
+    _zip:
+      fontCharacter: "\\E091"
+      fontColor: "#cc3e44"
+    _zip_1_light:
+      fontCharacter: "\\E091"
+      fontColor: "#627379"
+    _zip_1:
+      fontCharacter: "\\E091"
+      fontColor: "#6d8086"
+  file: _default
+  fileExtensions:
+    bsl: _bsl
+    mdo: _mdo
+    asm: _asm
+    s: _asm
+    h: _c_1
+    hh: _cpp_1
+    hpp: _cpp_1
+    hxx: _cpp_1
+    edn: _clojure_1
+    cfc: _coldfusion
+    cfm: _coldfusion
+    config: _config
+    cfg: _config
+    conf: _config
+    cr: _crystal
+    ecr: _crystal_embedded
+    slang: _crystal_embedded
+    cson: _json
+    css.map: _css
+    sss: _css
+    csv: _csv
+    xls: _xls
+    xlsx: _xls
+    cake: _cake
+    ctp: _cake_php
+    d: _d
+    doc: _word
+    docx: _word
+    ejs: _ejs
+    ex: _elixir
+    exs: _elixir_script
+    elm: _elm
+    ico: _favicon
+    gitignore: _git
+    gitconfig: _git
+    gitkeep: _git
+    gitattributes: _git
+    gitmodules: _git
+    slide: _go
+    article: _go
+    gradle: _gradle
+    gsp: _grails
+    haml: _haml
+    hs: _haskell
+    lhs: _haskell
+    hx: _haxe
+    hxs: _haxe_1
+    hxp: _haxe_2
+    hxml: _haxe_3
+    class: _java
+    classpath: _java
+    js.map: _javascript
+    spec.js: _javascript_1
+    es: _javascript
+    es5: _javascript
+    es7: _javascript
+    jinja: _jinja
+    jinja2: _jinja
+    jl: _julia
+    kt: _kotlin
+    kts: _kotlin
+    liquid: _liquid
+    ls: _livescript
+    argdown: _argdown
+    ad: _argdown
+    mustache: _mustache
+    stache: _mustache
+    njk: _nunjucks
+    nunjucks: _nunjucks
+    nunjs: _nunjucks
+    nunj: _nunjucks
+    njs: _nunjucks
+    nj: _nunjucks
+    npm-debug.log: _npm
+    npmignore: _npm_1
+    npmrc: _npm_1
+    ml: _ocaml
+    mli: _ocaml
+    cmx: _ocaml
+    cmxa: _ocaml
+    odata: _odata
+    php.inc: _php
+    pug: _pug
+    pp: _puppet
+    epp: _puppet
+    cjsx: _react
+    r: _R
+    erb: _html_erb
+    erb.html: _html_erb
+    html.erb: _html_erb
+    sass: _sass
+    springbeans: _spring
+    slim: _slim
+    smarty.tpl: _smarty
+    sbt: _sbt
+    scala: _scala
+    sol: _ethereum
+    styl: _stylus
+    tf: _terraform
+    tf.json: _terraform
+    tfvars: _terraform
+    tex: _tex
+    sty: _tex_1
+    dtx: _tex_2
+    ins: _tex_3
+    toml: _config
+    twig: _twig
+    spec.ts: _typescript_1
+    vala: _vala
+    vapi: _vala
+    vue: _vue
+    wasm: _wasm
+    wat: _wat
+    jar: _zip
+    zip: _zip_1
+    wgt: _wgt
+    ai: _illustrator
+    psd: _photoshop
+    pdf: _pdf
+    eot: _font
+    ttf: _font
+    woff: _font
+    woff2: _font
+    gif: _image
+    jpg: _image
+    jpeg: _image
+    png: _image
+    pxm: _image
+    svg: _svg
+    svgx: _image
+    sublime-project: _sublime
+    sublime-workspace: _sublime
+    component: _salesforce
+    cls: _salesforce
+    fish: _shell
+    mov: _video
+    ogv: _video
+    webm: _video
+    avi: _video
+    mpg: _video
+    mp4: _video
+    mp3: _audio
+    ogg: _audio
+    wav: _audio
+    flac: _audio
+    3ds: _svg_1
+    3dm: _svg_1
+    stl: _svg_1
+    obj: _svg_1
+    dae: _svg_1
+    babelrc: _babel
+    bowerrc: _bower
+    dockerignore: _docker_1
+    codeclimate.yml: _code-climate
+    eslintrc: _eslint
+    eslintrc.js: _eslint
+    eslintrc.yaml: _eslint
+    eslintrc.yml: _eslint
+    eslintrc.json: _eslint
+    eslintignore: _eslint_1
+    firebaserc: _firebase
+    jshintrc: _javascript_2
+    jscsrc: _javascript_2
+    stylelintrc: _stylelint
+    stylelintrc.json: _stylelint
+    stylelintrc.yaml: _stylelint
+    stylelintrc.yml: _stylelint
+    stylelintrc.js: _stylelint
+    stylelintignore: _stylelint_1
+    direnv: _config
+    env: _config
+    static: _config
+    editorconfig: _config
+    slugignore: _config
+    tmp: _clock_1
+    htaccess: _config
+    key: _lock
+    cert: _lock
+    ds_store: _ignored
+  fileNames:
+    mix: _hex
+    karma.conf.js: _karma
+    karma.conf.coffee: _karma
+    readme.md: _info
+    changelog.md: _clock
+    changelog: _clock
+    changes.md: _clock
+    version.md: _clock
+    version: _clock
+    mvnw: _maven
+    swagger.json: _json_1
+    swagger.yml: _json_1
+    swagger.yaml: _json_1
+    mime.types: _config
+    jenkinsfile: _jenkins
+    bower.json: _bower
+    docker-healthcheck: _docker_2
+    docker-compose.yml: _docker_3
+    docker-compose.yaml: _docker_3
+    firebase.json: _firebase
+    geckodriver: _firefox
+    gruntfile.js: _grunt
+    gruntfile.babel.js: _grunt
+    gruntfile.coffee: _grunt
+    gulpfile: _gulp
+    ionic.config.json: _ionic
+    ionic.project: _ionic
+    rollup.config.js: _rollup
+    sass-lint.yml: _sass
+    stylelint.config.js: _stylelint
+    yarn.clean: _yarn
+    yarn.lock: _yarn
+    webpack.config.js: _webpack
+    webpack.config.build.js: _webpack
+    license: _license
+    licence: _license
+    copying: _license
+    compiling: _license_1
+    contributing: _license_2
+    qmakefile: _makefile_1
+    omakefile: _makefile_2
+    cmakelists.txt: _makefile_3
+    procfile: _heroku
+    todo: _todo
+    npm-debug.log: _npm_ignored
+  languageIds:
+    bat: _windows
+    clojure: _clojure
+    coffeescript: _coffee
+    c: _c
+    cpp: _cpp
+    csharp: _c-sharp
+    css: _css
+    dockerfile: _docker
+    fsharp: _f-sharp
+    go: _go2
+    groovy: _grails
+    handlebars: _mustache
+    html: _html
+    properties: _java
+    java: _java
+    javascriptreact: _react
+    javascript: _javascript
+    json: _json
+    less: _less
+    lua: _lua
+    makefile: _makefile
+    markdown: _markdown
+    objective-c: _c_2
+    perl: _perl
+    php: _php
+    powershell: _powershell
+    jade: _jade
+    python: _python
+    r: _R
+    ruby: _ruby
+    rust: _rust
+    scss: _sass
+    shellscript: _shell
+    sql: _db
+    swift: _swift
+    typescript: _typescript
+    typescriptreact: _react
+    xml: _xml
+    yaml: _yml
+    argdown: _argdown
+    elm: _elm
+    ocaml: _ocaml
+    nunjucks: _nunjucks
+    mustache: _mustache
+    erb: _html_erb
+    terraform: _terraform
+    vue: _vue
+    sass: _sass
+    kotlin: _kotlin
+    jinja: _jinja
+    haxe: _haxe
+    haskell: _haskell
+    gradle: _gradle
+    elixir: _elixir
+    haml: _haml
+    stylus: _stylus
+    vala: _vala
+    todo: _todo
+  light:
+    file: _default_light
+    fileExtensions:
+      bsl: _bsl_light
+      mdo: _mdo_light
+      asm: _asm_light
+      s: _asm_light
+      h: _c_1_light
+      hh: _cpp_1_light
+      hpp: _cpp_1_light
+      hxx: _cpp_1_light
+      edn: _clojure_1_light
+      cfc: _coldfusion_light
+      cfm: _coldfusion_light
+      config: _config_light
+      cfg: _config_light
+      conf: _config_light
+      cr: _crystal_light
+      ecr: _crystal_embedded_light
+      slang: _crystal_embedded_light
+      cson: _json_light
+      css.map: _css_light
+      sss: _css_light
+      csv: _csv_light
+      xls: _xls_light
+      xlsx: _xls_light
+      cake: _cake_light
+      ctp: _cake_php_light
+      d: _d_light
+      doc: _word_light
+      docx: _word_light
+      ejs: _ejs_light
+      ex: _elixir_light
+      exs: _elixir_script_light
+      elm: _elm_light
+      ico: _favicon_light
+      gitignore: _git_light
+      gitconfig: _git_light
+      gitkeep: _git_light
+      gitattributes: _git_light
+      gitmodules: _git_light
+      slide: _go_light
+      article: _go_light
+      gradle: _gradle_light
+      gsp: _grails_light
+      haml: _haml_light
+      hs: _haskell_light
+      lhs: _haskell_light
+      hx: _haxe_light
+      hxs: _haxe_1_light
+      hxp: _haxe_2_light
+      hxml: _haxe_3_light
+      class: _java_light
+      classpath: _java_light
+      js.map: _javascript_light
+      spec.js: _javascript_1_light
+      es: _javascript_light
+      es5: _javascript_light
+      es7: _javascript_light
+      jinja: _jinja_light
+      jinja2: _jinja_light
+      jl: _julia_light
+      kt: _kotlin_light
+      kts: _kotlin_light
+      liquid: _liquid_light
+      ls: _livescript_light
+      argdown: _argdown_light
+      ad: _argdown_light
+      mustache: _mustache_light
+      stache: _mustache_light
+      njk: _nunjucks_light
+      nunjucks: _nunjucks_light
+      nunjs: _nunjucks_light
+      nunj: _nunjucks_light
+      njs: _nunjucks_light
+      nj: _nunjucks_light
+      npm-debug.log: _npm_light
+      npmignore: _npm_1_light
+      npmrc: _npm_1_light
+      ml: _ocaml_light
+      mli: _ocaml_light
+      cmx: _ocaml_light
+      cmxa: _ocaml_light
+      odata: _odata_light
+      php.inc: _php_light
+      pug: _pug_light
+      pp: _puppet_light
+      epp: _puppet_light
+      cjsx: _react_light
+      r: _R_light
+      erb: _html_erb_light
+      erb.html: _html_erb_light
+      html.erb: _html_erb_light
+      sass: _sass_light
+      springbeans: _spring_light
+      slim: _slim_light
+      smarty.tpl: _smarty_light
+      sbt: _sbt_light
+      scala: _scala_light
+      sol: _ethereum_light
+      styl: _stylus_light
+      tf: _terraform_light
+      tf.json: _terraform_light
+      tfvars: _terraform_light
+      tex: _tex_light
+      sty: _tex_1_light
+      dtx: _tex_2_light
+      ins: _tex_3_light
+      toml: _config_light
+      twig: _twig_light
+      spec.ts: _typescript_1_light
+      vala: _vala_light
+      vapi: _vala_light
+      vue: _vue_light
+      wasm: _wasm_light
+      wat: _wat_light
+      jar: _zip_light
+      zip: _zip_1_light
+      wgt: _wgt_light
+      ai: _illustrator_light
+      psd: _photoshop_light
+      pdf: _pdf_light
+      eot: _font_light
+      ttf: _font_light
+      woff: _font_light
+      woff2: _font_light
+      gif: _image_light
+      jpg: _image_light
+      jpeg: _image_light
+      png: _image_light
+      pxm: _image_light
+      svg: _svg_light
+      svgx: _image_light
+      sublime-project: _sublime_light
+      sublime-workspace: _sublime_light
+      component: _salesforce_light
+      cls: _salesforce_light
+      fish: _shell_light
+      mov: _video_light
+      ogv: _video_light
+      webm: _video_light
+      avi: _video_light
+      mpg: _video_light
+      mp4: _video_light
+      mp3: _audio_light
+      ogg: _audio_light
+      wav: _audio_light
+      flac: _audio_light
+      3ds: _svg_1_light
+      3dm: _svg_1_light
+      stl: _svg_1_light
+      obj: _svg_1_light
+      dae: _svg_1_light
+      babelrc: _babel_light
+      bowerrc: _bower_light
+      dockerignore: _docker_1_light
+      codeclimate.yml: _code-climate_light
+      eslintrc: _eslint_light
+      eslintrc.js: _eslint_light
+      eslintrc.yaml: _eslint_light
+      eslintrc.yml: _eslint_light
+      eslintrc.json: _eslint_light
+      eslintignore: _eslint_1_light
+      firebaserc: _firebase_light
+      jshintrc: _javascript_2_light
+      jscsrc: _javascript_2_light
+      stylelintrc: _stylelint_light
+      stylelintrc.json: _stylelint_light
+      stylelintrc.yaml: _stylelint_light
+      stylelintrc.yml: _stylelint_light
+      stylelintrc.js: _stylelint_light
+      stylelintignore: _stylelint_1_light
+      direnv: _config_light
+      env: _config_light
+      static: _config_light
+      editorconfig: _config_light
+      slugignore: _config_light
+      tmp: _clock_1_light
+      htaccess: _config_light
+      key: _lock_light
+      cert: _lock_light
+      ds_store: _ignored_light
+    languageIds:
+      bat: _windows_light
+      clojure: _clojure_light
+      coffeescript: _coffee_light
+      c: _c_light
+      cpp: _cpp_light
+      csharp: _c-sharp_light
+      css: _css_light
+      dockerfile: _docker_light
+      fsharp: _f-sharp_light
+      go: _go2_light
+      groovy: _grails_light
+      handlebars: _mustache_light
+      html: _html_light
+      properties: _java_light
+      java: _java_light
+      javascriptreact: _react_light
+      javascript: _javascript_light
+      json: _json_light
+      less: _less_light
+      lua: _lua_light
+      makefile: _makefile_light
+      markdown: _markdown_light
+      objective-c: _c_2_light
+      perl: _perl_light
+      php: _php_light
+      powershell: _powershell_light
+      jade: _jade_light
+      python: _python_light
+      r: _R_light
+      ruby: _ruby_light
+      rust: _rust_light
+      scss: _sass_light
+      shellscript: _shell_light
+      sql: _db_light
+      swift: _swift_light
+      typescript: _typescript_light
+      typescriptreact: _react_light
+      xml: _xml_light
+      yaml: _yml_light
+      argdown: _argdown_light
+      elm: _elm_light
+      ocaml: _ocaml_light
+      nunjucks: _nunjucks_light
+      mustache: _mustache_light
+      erb: _html_erb_light
+      terraform: _terraform_light
+      vue: _vue_light
+      sass: _sass_light
+      kotlin: _kotlin_light
+      jinja: _jinja_light
+      haxe: _haxe_light
+      haskell: _haskell_light
+      gradle: _gradle_light
+      elixir: _elixir_light
+      haml: _haml_light
+      stylus: _stylus_light
+      vala: _vala_light
+    fileNames:
+      mix: _hex_light
+      karma.conf.js: _karma_light
+      karma.conf.coffee: _karma_light
+      readme.md: _info_light
+      changelog.md: _clock_light
+      changelog: _clock_light
+      changes.md: _clock_light
+      version.md: _clock_light
+      version: _clock_light
+      mvnw: _maven_light
+      swagger.json: _json_1_light
+      swagger.yml: _json_1_light
+      swagger.yaml: _json_1_light
+      mime.types: _config_light
+      jenkinsfile: _jenkins_light
+      bower.json: _bower_light
+      docker-healthcheck: _docker_2_light
+      docker-compose.yml: _docker_3_light
+      docker-compose.yaml: _docker_3_light
+      firebase.json: _firebase_light
+      geckodriver: _firefox_light
+      gruntfile.js: _grunt_light
+      gruntfile.babel.js: _grunt_light
+      gruntfile.coffee: _grunt_light
+      gulpfile: _gulp_light
+      ionic.config.json: _ionic_light
+      ionic.project: _ionic_light
+      rollup.config.js: _rollup_light
+      sass-lint.yml: _sass_light
+      stylelint.config.js: _stylelint_light
+      yarn.clean: _yarn_light
+      yarn.lock: _yarn_light
+      webpack.config.js: _webpack_light
+      webpack.config.build.js: _webpack_light
+      license: _license_light
+      licence: _license_light
+      copying: _license_light
+      compiling: _license_1_light
+      contributing: _license_2_light
+      qmakefile: _makefile_1_light
+      omakefile: _makefile_2_light
+      cmakelists.txt: _makefile_3_light
+      procfile: _heroku_light
+      npm-debug.log: _npm_ignored_light
+  version: https://github.com/jesseweed/seti-ui/commit/89175d7f9e0c70cd325b80a18a3c77fc8eb7c798
+monokai-color-theme.json:
+  type: dark
+  colors:
+    dropdown.background: "#414339"
+    list.activeSelectionBackground: "#75715E"
+    list.focusBackground: "#414339"
+    dropdown.listBackground: "#1e1f1c"
+    settings.textInputBackground: "#32342d"
+    settings.numberInputBackground: "#32342d"
+    list.inactiveSelectionBackground: "#414339"
+    list.hoverBackground: "#3e3d32"
+    list.dropBackground: "#414339"
+    list.highlightForeground: "#f8f8f2"
+    button.background: "#75715E"
+    editor.background: "#272822"
+    editor.foreground: "#f8f8f2"
+    selection.background: "#ccccc7"
+    editor.selectionHighlightBackground: "#575b6180"
+    editor.selectionBackground: "#878b9180"
+    editor.wordHighlightBackground: "#4a4a7680"
+    editor.wordHighlightStrongBackground: "#6a6a9680"
+    editor.lineHighlightBackground: "#3e3d32"
+    editorLineNumber.activeForeground: "#c2c2bf"
+    editorCursor.foreground: "#f8f8f0"
+    editorWhitespace.foreground: "#464741"
+    editorIndentGuide.background: "#464741"
+    editorIndentGuide.activeBackground: "#767771"
+    editorGroupHeader.tabsBackground: "#1e1f1c"
+    editorGroup.dropBackground: "#41433980"
+    tab.inactiveBackground: "#34352f"
+    tab.border: "#1e1f1c"
+    tab.modifiedBorder: "#007acc"
+    tab.inactiveForeground: "#ccccc7"
+    widget.shadow: "#000000"
+    progressBar.background: "#75715E"
+    badge.background: "#75715E"
+    badge.foreground: "#f8f8f2"
+    editorLineNumber.foreground: "#90908a"
+    panelTitle.activeForeground: "#f8f8f2"
+    panelTitle.activeBorder: "#75715E"
+    panelTitle.inactiveForeground: "#75715E"
+    panel.border: "#414339"
+    titleBar.activeBackground: "#1e1f1c"
+    statusBar.background: "#414339"
+    statusBar.noFolderBackground: "#414339"
+    statusBar.debuggingBackground: "#75715E"
+    statusBarItem.remoteBackground: "#AC6218"
+    activityBar.background: "#272822"
+    activityBar.foreground: "#f8f8f2"
+    activityBar.dropBackground: "#414339"
+    sideBar.background: "#1e1f1c"
+    sideBarSectionHeader.background: "#272822"
+    menu.background: "#1e1f1c"
+    menu.foreground: "#cccccc"
+    pickerGroup.foreground: "#75715E"
+    input.background: "#414339"
+    inputOption.activeBorder: "#75715E"
+    focusBorder: "#75715E"
+    editorWidget.background: "#1e1f1c"
+    debugToolBar.background: "#1e1f1c"
+    diffEditor.insertedTextBackground: "#66852880"
+    diffEditor.removedTextBackground: "#90274A80"
+    inputValidation.errorBackground: "#90274A"
+    inputValidation.errorBorder: "#f92672"
+    inputValidation.warningBackground: "#848528"
+    inputValidation.warningBorder: "#e2e22e"
+    inputValidation.infoBackground: "#546190"
+    inputValidation.infoBorder: "#819aff"
+    editorHoverWidget.background: "#414339"
+    editorHoverWidget.border: "#75715E"
+    editorSuggestWidget.background: "#272822"
+    editorSuggestWidget.border: "#75715E"
+    editorGroup.border: "#34352f"
+    peekView.border: "#75715E"
+    peekViewEditor.background: "#272822"
+    peekViewResult.background: "#1e1f1c"
+    peekViewTitle.background: "#1e1f1c"
+    peekViewResult.selectionBackground: "#414339"
+    peekViewResult.matchHighlightBackground: "#75715E"
+    peekViewEditor.matchHighlightBackground: "#75715E"
+    terminal.ansiBlack: "#333333"
+    terminal.ansiRed: "#C4265E"
+    terminal.ansiGreen: "#86B42B"
+    terminal.ansiYellow: "#B3B42B"
+    terminal.ansiBlue: "#6A7EC8"
+    terminal.ansiMagenta: "#8C6BC8"
+    terminal.ansiCyan: "#56ADBC"
+    terminal.ansiWhite: "#e3e3dd"
+    terminal.ansiBrightBlack: "#666666"
+    terminal.ansiBrightRed: "#f92672"
+    terminal.ansiBrightGreen: "#A6E22E"
+    terminal.ansiBrightYellow: "#e2e22e"
+    terminal.ansiBrightBlue: "#819aff"
+    terminal.ansiBrightMagenta: "#AE81FF"
+    terminal.ansiBrightCyan: "#66D9EF"
+    terminal.ansiBrightWhite: "#f8f8f2"
+  tokenColors:
+  - settings:
+      background: "#272822"
+      foreground: "#F8F8F2"
+  - scope:
+    - meta.embedded
+    - source.groovy.embedded
+    settings:
+      background: "#272822"
+      foreground: "#F8F8F2"
+  - name: Comment
+    scope: comment
+    settings:
+      foreground: "#75715E"
+  - name: String
+    scope: string
+    settings:
+      foreground: "#E6DB74"
+  - name: Template Definition
+    scope:
+    - punctuation.definition.template-expression
+    - punctuation.section.embedded
+    settings:
+      foreground: "#F92672"
+  - name: Reset JavaScript string interpolation expression
+    scope:
+    - meta.template.expression
+    settings:
+      foreground: "#F8F8F2"
+  - name: Number
+    scope: constant.numeric
+    settings:
+      foreground: "#AE81FF"
+  - name: Built-in constant
+    scope: constant.language
+    settings:
+      foreground: "#AE81FF"
+  - name: User-defined constant
+    scope: constant.character, constant.other
+    settings:
+      foreground: "#AE81FF"
+  - name: Variable
+    scope: variable
+    settings:
+      fontStyle: ''
+      foreground: "#F8F8F2"
+  - name: Keyword
+    scope: keyword
+    settings:
+      foreground: "#F92672"
+  - name: Storage
+    scope: storage
+    settings:
+      fontStyle: ''
+      foreground: "#F92672"
+  - name: Storage type
+    scope: storage.type
+    settings:
+      fontStyle: italic
+      foreground: "#66D9EF"
+  - name: Class name
+    scope: entity.name.type, entity.name.class
+    settings:
+      fontStyle: underline
+      foreground: "#A6E22E"
+  - name: Inherited class
+    scope: entity.other.inherited-class
+    settings:
+      fontStyle: italic underline
+      foreground: "#A6E22E"
+  - name: Function name
+    scope: entity.name.function
+    settings:
+      fontStyle: ''
+      foreground: "#A6E22E"
+  - name: Function argument
+    scope: variable.parameter
+    settings:
+      fontStyle: italic
+      foreground: "#FD971F"
+  - name: Tag name
+    scope: entity.name.tag
+    settings:
+      fontStyle: ''
+      foreground: "#F92672"
+  - name: Tag attribute
+    scope: entity.other.attribute-name
+    settings:
+      fontStyle: ''
+      foreground: "#A6E22E"
+  - name: Library function
+    scope: support.function
+    settings:
+      fontStyle: ''
+      foreground: "#66D9EF"
+  - name: Library constant
+    scope: support.constant
+    settings:
+      fontStyle: ''
+      foreground: "#66D9EF"
+  - name: Library class/type
+    scope: support.type, support.class
+    settings:
+      fontStyle: italic
+      foreground: "#66D9EF"
+  - name: Library variable
+    scope: support.other.variable
+    settings:
+      fontStyle: ''
+  - name: Invalid
+    scope: invalid
+    settings:
+      background: "#F92672"
+      fontStyle: ''
+      foreground: "#F8F8F0"
+  - name: Invalid deprecated
+    scope: invalid.deprecated
+    settings:
+      background: "#AE81FF"
+      foreground: "#F8F8F0"
+  - name: JSON String
+    scope: meta.structure.dictionary.json string.quoted.double.json
+    settings:
+      foreground: "#CFCFC2"
+  - name: diff.header
+    scope: meta.diff, meta.diff.header
+    settings:
+      foreground: "#75715E"
+  - name: diff.deleted
+    scope: markup.deleted
+    settings:
+      foreground: "#F92672"
+  - name: diff.inserted
+    scope: markup.inserted
+    settings:
+      foreground: "#A6E22E"
+  - name: diff.changed
+    scope: markup.changed
+    settings:
+      foreground: "#E6DB74"
+  - scope: constant.numeric.line-number.find-in-files - match
+    settings:
+      foreground: "#AE81FFA0"
+  - scope: entity.name.filename.find-in-files
+    settings:
+      foreground: "#E6DB74"
+  - name: Markup Quote
+    scope: markup.quote
+    settings:
+      foreground: "#F92672"
+  - name: Markup Lists
+    scope: markup.list
+    settings:
+      foreground: "#E6DB74"
+  - name: Markup Styling
+    scope: markup.bold, markup.italic
+    settings:
+      foreground: "#66D9EF"
+  - name: Markup Inline
+    scope: markup.inline.raw
+    settings:
+      fontStyle: ''
+      foreground: "#FD971F"
+  - name: Markup Headings
+    scope: markup.heading
+    settings:
+      foreground: "#A6E22E"
+  - name: Markup Setext Header
+    scope: markup.heading.setext
+    settings:
+      fontStyle: ''
+      foreground: "#A6E22E"
+  - scope: token.info-token
+    settings:
+      foreground: "#6796e6"
+  - scope: token.warn-token
+    settings:
+      foreground: "#cd9731"
+  - scope: token.error-token
+    settings:
+      foreground: "#f44747"
+  - scope: token.debug-token
+    settings:
+      foreground: "#b267e6"
+  - name: this.self
+    scope: variable.language
+    settings:
+      foreground: "#FD971F"
+Red-color-theme.json:
+  name: Red
+  colors:
+    activityBar.background: "#580000"
+    tab.inactiveBackground: "#300a0a"
+    tab.activeBackground: "#490000"
+    tab.modifiedBorder: "#db7e58"
+    sideBar.background: "#330000"
+    statusBar.background: "#700000"
+    statusBar.noFolderBackground: "#700000"
+    statusBarItem.remoteBackground: "#c33"
+    editorGroupHeader.tabsBackground: "#330000"
+    titleBar.activeBackground: "#770000"
+    titleBar.inactiveBackground: "#772222"
+    selection.background: "#ff777788"
+    editor.background: "#390000"
+    editorGroup.border: "#ff666633"
+    editorCursor.foreground: "#970000"
+    editor.foreground: "#F8F8F8"
+    editorWhitespace.foreground: "#c10000"
+    editor.selectionBackground: "#750000"
+    editorLineNumber.foreground: "#ff777788"
+    editorLineNumber.activeForeground: "#ffbbbb88"
+    editorWidget.background: "#300000"
+    editorHoverWidget.background: "#300000"
+    editorSuggestWidget.background: "#300000"
+    editorSuggestWidget.border: "#220000"
+    editor.lineHighlightBackground: "#ff000033"
+    editor.hoverHighlightBackground: "#ff000044"
+    editor.selectionHighlightBackground: "#f5500039"
+    editorLink.activeForeground: "#FFD0AA"
+    peekViewTitle.background: "#550000"
+    peekView.border: "#ff000044"
+    peekViewResult.background: "#400000"
+    peekViewEditor.background: "#300000"
+    debugToolBar.background: "#660000"
+    focusBorder: "#ff6666aa"
+    button.background: "#833"
+    dropdown.background: "#580000"
+    input.background: "#580000"
+    inputOption.activeBorder: "#cc0000"
+    inputValidation.infoBackground: "#550000"
+    inputValidation.infoBorder: "#DB7E58"
+    list.hoverBackground: "#800000"
+    list.activeSelectionBackground: "#880000"
+    list.inactiveSelectionBackground: "#770000"
+    list.dropBackground: "#662222"
+    list.focusBackground: "#660000"
+    list.highlightForeground: "#ff4444"
+    pickerGroup.foreground: "#cc9999"
+    pickerGroup.border: "#ff000033"
+    badge.background: "#cc3333"
+    progressBar.background: "#cc3333"
+    errorForeground: "#ffeaea"
+    extensionButton.prominentBackground: "#cc3333"
+    extensionButton.prominentHoverBackground: "#cc333388"
+  tokenColors:
+  - settings:
+      background: "#390000"
+      caret: "#970000"
+      foreground: "#F8F8F8"
+      invisibles: "#c10000"
+      lineHighlight: "#0000004A"
+      selection: "#750000"
+  - scope:
+    - meta.embedded
+    - source.groovy.embedded
+    settings:
+      background: "#390000"
+      foreground: "#F8F8F8"
+  - name: Comment
+    scope: comment
+    settings:
+      fontStyle: italic
+      foreground: "#e7c0c0ff"
+  - name: Constant
+    scope: constant
+    settings:
+      fontStyle: ''
+      foreground: "#994646ff"
+  - name: Keyword
+    scope: keyword
+    settings:
+      fontStyle: ''
+      foreground: "#f12727ff"
+  - name: Entity
+    scope: entity
+    settings:
+      fontStyle: ''
+      foreground: "#fec758ff"
+  - name: Storage
+    scope: storage
+    settings:
+      fontStyle: bold
+      foreground: "#ff6262ff"
+  - name: String
+    scope: string
+    settings:
+      fontStyle: ''
+      foreground: "#cd8d8dff"
+  - name: Support
+    scope: support
+    settings:
+      fontStyle: ''
+      foreground: "#9df39fff"
+  - name: Variable
+    scope: variable
+    settings:
+      fontStyle: italic
+      foreground: "#fb9a4bff"
+  - name: Invalid
+    scope: invalid
+    settings:
+      background: "#fd6209ff"
+      foreground: "#ffffffff"
+  - name: Embedded Source
+    scope: text source
+    settings:
+      background: "#b0b3ba14"
+  - name: Embedded Source (Bright)
+    scope: text.html.ruby source
+    settings:
+      background: "#b1b3ba21"
+  - name: Entity inherited-class
+    scope: entity.other.inherited-class
+    settings:
+      fontStyle: underline
+      foreground: "#aa5507ff"
+  - scope: constant.character
+    settings:
+      foreground: "#ec0d1e"
+  - scope:
+    - string constant
+    - constant.character.escape
+    settings:
+      fontStyle: ''
+      foreground: "#ffe862ff"
+  - name: String.regexp
+    scope: string.regexp
+    settings:
+      foreground: "#ffb454ff"
+  - name: String variable
+    scope: string variable
+    settings:
+      foreground: "#edef7dff"
+  - name: Support.function
+    scope: support.function
+    settings:
+      fontStyle: ''
+      foreground: "#ffb454ff"
+  - name: Support.constant
+    scope: support.constant
+    settings:
+      fontStyle: ''
+      foreground: "#eb939aff"
+  - name: Doctype/XML Processing
+    scope:
+    - declaration.sgml.html declaration.doctype
+    - declaration.sgml.html declaration.doctype entity
+    - declaration.sgml.html declaration.doctype string
+    - declaration.xml-processing
+    - declaration.xml-processing entity
+    - declaration.xml-processing string
+    settings:
+      fontStyle: ''
+      foreground: "#73817dff"
+  - name: Meta.tag.A
+    scope:
+    - declaration.tag
+    - declaration.tag entity
+    - meta.tag
+    - meta.tag entity
+    settings:
+      fontStyle: ''
+      foreground: "#ec0d1eff"
+  - name: css tag-name
+    scope: meta.selector.css entity.name.tag
+    settings:
+      fontStyle: ''
+      foreground: "#aa5507ff"
+  - name: css#id
+    scope: meta.selector.css entity.other.attribute-name.id
+    settings:
+      foreground: "#fec758ff"
+  - name: css.class
+    scope: meta.selector.css entity.other.attribute-name.class
+    settings:
+      fontStyle: ''
+      foreground: "#41a83eff"
+  - name: 'css property-name:'
+    scope: support.type.property-name.css
+    settings:
+      fontStyle: ''
+      foreground: "#96dd3bff"
+  - name: css property-value;
+    scope:
+    - meta.property-group support.constant.property-value.css
+    - meta.property-value support.constant.property-value.css
+    settings:
+      fontStyle: italic
+      foreground: "#ffe862ff"
+  - name: css additional-constants
+    scope:
+    - meta.property-value support.constant.named-color.css
+    - meta.property-value constant
+    settings:
+      fontStyle: ''
+      foreground: "#ffe862ff"
+  - name: css @at-rule
+    scope: meta.preprocessor.at-rule keyword.control.at-rule
+    settings:
+      foreground: "#fd6209ff"
+  - name: css constructor.argument
+    scope: meta.constructor.argument.css
+    settings:
+      fontStyle: ''
+      foreground: "#ec9799ff"
+  - name: diff.header
+    scope:
+    - meta.diff
+    - meta.diff.header
+    settings:
+      background: "#0b2f20ff"
+      fontStyle: italic
+      foreground: "#f8f8f8ff"
+  - name: diff.deleted
+    scope: markup.deleted
+    settings:
+      background: "#fedcddff"
+      foreground: "#ec9799ff"
+  - name: diff.changed
+    scope: markup.changed
+    settings:
+      background: "#c4b14aff"
+      foreground: "#f8f8f8ff"
+  - name: diff.inserted
+    scope: markup.inserted
+    settings:
+      background: "#9bf199ff"
+      foreground: "#41a83eff"
+  - name: Markup Quote
+    scope: markup.quote
+    settings:
+      foreground: "#f12727ff"
+  - name: Markup Lists
+    scope: markup.list
+    settings:
+      foreground: "#ff6262ff"
+  - name: Markup Styling
+    scope:
+    - markup.bold
+    - markup.italic
+    settings:
+      foreground: "#fb9a4bff"
+  - name: Markup Inline
+    scope: markup.inline.raw
+    settings:
+      fontStyle: ''
+      foreground: "#cd8d8dff"
+  - name: Markup Headings
+    scope: markup.heading
+    settings:
+      foreground: "#fec758ff"
+  - name: Markup Setext Header
+    scope: markup.heading.setext
+    settings:
+      fontStyle: ''
+      foreground: "#fec758ff"
+  - name: String interpolation
+    scope:
+    - punctuation.definition.template-expression.begin
+    - punctuation.definition.template-expression.end
+    - punctuation.section.embedded
+    - ".format.placeholder"
+    settings:
+      foreground: "#ec0d1e"
+abyss-color-theme.json:
+  name: Abyss
+  tokenColors:
+  - settings:
+      background: "#000c18"
+      foreground: "#6688cc"
+  - scope:
+    - meta.embedded
+    - source.groovy.embedded
+    settings:
+      background: "#000c18"
+      foreground: "#6688cc"
+  - name: Comment
+    scope: comment
+    settings:
+      foreground: "#384887"
+  - name: String
+    scope: string
+    settings:
+      foreground: "#22aa44"
+  - name: Number
+    scope: constant.numeric
+    settings:
+      foreground: "#f280d0"
+  - name: Built-in constant
+    scope: constant.language
+    settings:
+      foreground: "#f280d0"
+  - name: User-defined constant
+    scope:
+    - constant.character
+    - constant.other
+    settings:
+      foreground: "#f280d0"
+  - name: Variable
+    scope: variable
+    settings:
+      fontStyle: ''
+  - name: Keyword
+    scope: keyword
+    settings:
+      foreground: "#225588"
+  - name: Storage
+    scope: storage
+    settings:
+      fontStyle: ''
+      foreground: "#225588"
+  - name: Storage type
+    scope: storage.type
+    settings:
+      fontStyle: italic
+      foreground: "#9966b8"
+  - name: Class name
+    scope:
+    - entity.name.class
+    - entity.name.type
+    settings:
+      fontStyle: underline
+      foreground: "#ffeebb"
+  - name: Inherited class
+    scope: entity.other.inherited-class
+    settings:
+      fontStyle: italic underline
+      foreground: "#ddbb88"
+  - name: Function name
+    scope: entity.name.function
+    settings:
+      fontStyle: ''
+      foreground: "#ddbb88"
+  - name: Function argument
+    scope: variable.parameter
+    settings:
+      fontStyle: italic
+      foreground: "#2277ff"
+  - name: Tag name
+    scope: entity.name.tag
+    settings:
+      fontStyle: ''
+      foreground: "#225588"
+  - name: Tag attribute
+    scope: entity.other.attribute-name
+    settings:
+      fontStyle: ''
+      foreground: "#ddbb88"
+  - name: Library function
+    scope: support.function
+    settings:
+      fontStyle: ''
+      foreground: "#9966b8"
+  - name: Library constant
+    scope: support.constant
+    settings:
+      fontStyle: ''
+      foreground: "#9966b8"
+  - name: Library class/type
+    scope:
+    - support.type
+    - support.class
+    settings:
+      fontStyle: italic
+      foreground: "#9966b8"
+  - name: Library variable
+    scope: support.other.variable
+    settings:
+      fontStyle: ''
+  - name: Invalid
+    scope: invalid
+    settings:
+      background: "#F92672"
+      fontStyle: ''
+      foreground: "#F8F8F0"
+  - name: Invalid deprecated
+    scope: invalid.deprecated
+    settings:
+      background: "#AE81FF"
+      foreground: "#F8F8F0"
+  - name: 'diff: header'
+    scope:
+    - meta.diff
+    - meta.diff.header
+    settings:
+      background: "#b58900"
+      fontStyle: italic
+      foreground: "#E0EDDD"
+  - name: 'diff: deleted'
+    scope: markup.deleted
+    settings:
+      background: "#eee8d5"
+      fontStyle: ''
+      foreground: "#dc322f"
+  - name: 'diff: changed'
+    scope: markup.changed
+    settings:
+      background: "#eee8d5"
+      fontStyle: ''
+      foreground: "#cb4b16"
+  - name: 'diff: inserted'
+    scope: markup.inserted
+    settings:
+      background: "#eee8d5"
+      foreground: "#219186"
+  - name: Markup Quote
+    scope: markup.quote
+    settings:
+      foreground: "#22aa44"
+  - name: Markup Styling
+    scope:
+    - markup.bold
+    - markup.italic
+    settings:
+      foreground: "#22aa44"
+  - name: Markup Inline
+    scope: markup.inline.raw
+    settings:
+      fontStyle: ''
+      foreground: "#9966b8"
+  - name: Markup Setext Header
+    scope: markup.heading.setext
+    settings:
+      fontStyle: ''
+      foreground: "#ddbb88"
+  colors:
+    focusBorder: "#596F99"
+    input.background: "#181f2f"
+    inputOption.activeBorder: "#1D4A87"
+    inputValidation.infoBorder: "#384078"
+    inputValidation.infoBackground: "#051336"
+    inputValidation.warningBackground: "#5B7E7A"
+    inputValidation.warningBorder: "#5B7E7A"
+    inputValidation.errorBackground: "#A22D44"
+    inputValidation.errorBorder: "#AB395B"
+    badge.background: "#0063a5"
+    progressBar.background: "#0063a5"
+    dropdown.background: "#181f2f"
+    button.background: "#2B3C5D"
+    list.activeSelectionBackground: "#08286b"
+    list.focusBackground: "#08286b"
+    list.hoverBackground: "#061940"
+    list.inactiveSelectionBackground: "#152037"
+    list.dropBackground: "#041D52"
+    list.highlightForeground: "#0063a5"
+    scrollbar.shadow: "#515E91AA"
+    scrollbarSlider.activeBackground: "#3B3F5188"
+    scrollbarSlider.background: "#1F2230AA"
+    scrollbarSlider.hoverBackground: "#3B3F5188"
+    editor.background: "#000c18"
+    editorWidget.background: "#262641"
+    editorCursor.foreground: "#ddbb88"
+    editorWhitespace.foreground: "#103050"
+    editor.lineHighlightBackground: "#082050"
+    editor.selectionBackground: "#770811"
+    editorIndentGuide.background: "#002952"
+    editorIndentGuide.activeBackground: "#204972"
+    editorHoverWidget.background: "#000c38"
+    editorHoverWidget.border: "#004c18"
+    editorLineNumber.foreground: "#406385"
+    editorLineNumber.activeForeground: "#80a2c2"
+    editorMarkerNavigation.background: "#060621"
+    editorMarkerNavigationError.background: "#AB395B"
+    editorMarkerNavigationWarning.background: "#5B7E7A"
+    editorLink.activeForeground: "#0063a5"
+    editor.findMatchHighlightBackground: "#eeeeee44"
+    peekViewResult.background: "#060621"
+    peekViewEditor.background: "#10192c"
+    peekViewTitle.background: "#10192c"
+    peekView.border: "#2b2b4a"
+    peekViewEditor.matchHighlightBackground: "#eeeeee33"
+    peekViewResult.matchHighlightBackground: "#eeeeee44"
+    diffEditor.insertedTextBackground: "#31958A55"
+    diffEditor.removedTextBackground: "#892F4688"
+    titleBar.activeBackground: "#10192c"
+    editorGroup.border: "#2b2b4a"
+    editorGroup.dropBackground: "#25375daa"
+    editorGroupHeader.tabsBackground: "#1c1c2a"
+    tab.border: "#2b2b4a"
+    tab.inactiveBackground: "#10192c"
+    tab.modifiedBorder: "#0072bf"
+    activityBar.background: "#051336"
+    panel.border: "#2b2b4a"
+    sideBar.background: "#060621"
+    sideBarSectionHeader.background: "#10192c"
+    statusBar.background: "#10192c"
+    statusBar.noFolderBackground: "#10192c"
+    statusBar.debuggingBackground: "#10192c"
+    statusBarItem.remoteBackground: "#0063a5"
+    statusBarItem.prominentBackground: "#0063a5"
+    statusBarItem.prominentHoverBackground: "#0063a5dd"
+    debugToolBar.background: "#051336"
+    debugExceptionWidget.background: "#051336"
+    debugExceptionWidget.border: "#AB395B"
+    pickerGroup.border: "#596F99"
+    pickerGroup.foreground: "#596F99"
+    extensionButton.prominentBackground: "#5f8b3b"
+    extensionButton.prominentHoverBackground: "#5f8b3bbb"
+    terminal.ansiBlack: "#111111"
+    terminal.ansiRed: "#ff9da4"
+    terminal.ansiGreen: "#d1f1a9"
+    terminal.ansiYellow: "#ffeead"
+    terminal.ansiBlue: "#bbdaff"
+    terminal.ansiMagenta: "#ebbbff"
+    terminal.ansiCyan: "#99ffff"
+    terminal.ansiWhite: "#cccccc"
+    terminal.ansiBrightBlack: "#333333"
+    terminal.ansiBrightRed: "#ff7882"
+    terminal.ansiBrightGreen: "#b8f171"
+    terminal.ansiBrightYellow: "#ffe580"
+    terminal.ansiBrightBlue: "#80baff"
+    terminal.ansiBrightMagenta: "#d778ff"
+    terminal.ansiBrightCyan: "#78ffff"
+    terminal.ansiBrightWhite: "#ffffff"
+quietlight-color-theme.json:
+  name: Quiet Light
+  tokenColors:
+  - settings:
+      background: "#F5F5F5"
+      foreground: "#333333"
+  - scope:
+    - meta.embedded
+    - source.groovy.embedded
+    settings:
+      background: "#F5F5F5"
+      foreground: "#333333"
+  - name: Comments
+    scope:
+    - comment
+    - punctuation.definition.comment
+    settings:
+      fontStyle: italic
+      foreground: "#AAAAAA"
+  - name: 'Comments: Preprocessor'
+    scope: comment.block.preprocessor
+    settings:
+      fontStyle: ''
+      foreground: "#AAAAAA"
+  - name: 'Comments: Documentation'
+    scope:
+    - comment.documentation
+    - comment.block.documentation
+    - 'comment.block.documentation punctuation.definition.comment '
+    settings:
+      foreground: "#448C27"
+  - name: Invalid - Deprecated
+    scope: invalid.deprecated
+    settings:
+      background: "#96000014"
+  - name: Invalid - Illegal
+    scope: invalid.illegal
+    settings:
+      background: "#96000014"
+      foreground: "#660000"
+  - name: Operators
+    scope: keyword.operator
+    settings:
+      foreground: "#777777"
+  - name: Keywords
+    scope:
+    - keyword
+    - storage
+    settings:
+      foreground: "#4B69C6"
+  - name: Types
+    scope:
+    - storage.type
+    - support.type
+    settings:
+      foreground: "#7A3E9D"
+  - name: Language Constants
+    scope:
+    - constant.language
+    - support.constant
+    - variable.language
+    settings:
+      foreground: "#9C5D27"
+  - name: Variables
+    scope:
+    - variable
+    - support.variable
+    settings:
+      foreground: "#7A3E9D"
+  - name: Functions
+    scope:
+    - entity.name.function
+    - support.function
+    settings:
+      fontStyle: bold
+      foreground: "#AA3731"
+  - name: Classes
+    scope:
+    - entity.name.type
+    - entity.other.inherited-class
+    - support.class
+    settings:
+      fontStyle: bold
+      foreground: "#7A3E9D"
+  - name: Exceptions
+    scope: entity.name.exception
+    settings:
+      foreground: "#660000"
+  - name: Sections
+    scope: entity.name.section
+    settings:
+      fontStyle: bold
+  - name: Numbers, Characters
+    scope:
+    - constant.numeric
+    - constant.character
+    - constant
+    settings:
+      foreground: "#9C5D27"
+  - name: Strings
+    scope: string
+    settings:
+      foreground: "#448C27"
+  - name: 'Strings: Escape Sequences'
+    scope: constant.character.escape
+    settings:
+      foreground: "#777777"
+  - name: 'Strings: Regular Expressions'
+    scope: string.regexp
+    settings:
+      foreground: "#4B69C6"
+  - name: 'Strings: Symbols'
+    scope: constant.other.symbol
+    settings:
+      foreground: "#9C5D27"
+  - name: Punctuation
+    scope: punctuation
+    settings:
+      foreground: "#777777"
+  - name: Embedded Source
+    scope:
+    - string source
+    - text source
+    settings:
+      background: "#EAEBE6"
+  - name: "-----------------------------------"
+    settings: {}
+  - name: 'HTML: Doctype Declaration'
+    scope:
+    - meta.tag.sgml.doctype
+    - meta.tag.sgml.doctype string
+    - meta.tag.sgml.doctype entity.name.tag
+    - meta.tag.sgml punctuation.definition.tag.html
+    settings:
+      foreground: "#AAAAAA"
+  - name: 'HTML: Tags'
+    scope:
+    - meta.tag
+    - punctuation.definition.tag.html
+    - punctuation.definition.tag.begin.html
+    - punctuation.definition.tag.end.html
+    settings:
+      foreground: "#91B3E0"
+  - name: 'HTML: Tag Names'
+    scope: entity.name.tag
+    settings:
+      foreground: "#4B69C6"
+  - name: 'HTML: Attribute Names'
+    scope:
+    - meta.tag entity.other.attribute-name
+    - entity.other.attribute-name.html
+    settings:
+      fontStyle: italic
+      foreground: "#8190A0"
+  - name: 'HTML: Entities'
+    scope:
+    - constant.character.entity
+    - punctuation.definition.entity
+    settings:
+      foreground: "#9C5D27"
+  - name: "-----------------------------------"
+    settings: {}
+  - name: 'CSS: Selectors'
+    scope:
+    - meta.selector
+    - meta.selector entity
+    - meta.selector entity punctuation
+    - entity.name.tag.css
+    settings:
+      foreground: "#7A3E9D"
+  - name: 'CSS: Property Names'
+    scope:
+    - meta.property-name
+    - support.type.property-name
+    settings:
+      foreground: "#9C5D27"
+  - name: 'CSS: Property Values'
+    scope:
+    - meta.property-value
+    - meta.property-value constant.other
+    - support.constant.property-value
+    settings:
+      foreground: "#448C27"
+  - name: 'CSS: Important Keyword'
+    scope: keyword.other.important
+    settings:
+      fontStyle: bold
+  - name: "-----------------------------------"
+    settings: {}
+  - name: 'Markup: Changed'
+    scope: markup.changed
+    settings:
+      background: "#FFFFDD"
+      foreground: "#000000"
+  - name: 'Markup: Deletion'
+    scope: markup.deleted
+    settings:
+      background: "#FFDDDD"
+      foreground: "#000000"
+  - name: 'Markup: Emphasis'
+    scope: markup.italic
+    settings:
+      fontStyle: italic
+  - name: 'Markup: Error'
+    scope: markup.error
+    settings:
+      background: "#96000014"
+      foreground: "#660000"
+  - name: 'Markup: Insertion'
+    scope: markup.inserted
+    settings:
+      background: "#DDFFDD"
+      foreground: "#000000"
+  - name: 'Markup: Link'
+    scope: meta.link
+    settings:
+      foreground: "#4B69C6"
+  - name: 'Markup: Output'
+    scope:
+    - markup.output
+    - markup.raw
+    settings:
+      foreground: "#777777"
+  - name: 'Markup: Prompt'
+    scope: markup.prompt
+    settings:
+      foreground: "#777777"
+  - name: 'Markup: Heading'
+    scope: markup.heading
+    settings:
+      foreground: "#AA3731"
+  - name: 'Markup: Strong'
+    scope: markup.bold
+    settings:
+      fontStyle: bold
+  - name: 'Markup: Traceback'
+    scope: markup.traceback
+    settings:
+      foreground: "#660000"
+  - name: 'Markup: Underline'
+    scope: markup.underline
+    settings:
+      fontStyle: underline
+  - name: Markup Quote
+    scope: markup.quote
+    settings:
+      foreground: "#7A3E9D"
+  - name: Markup Lists
+    scope: markup.list
+    settings:
+      foreground: "#4B69C6"
+  - name: Markup Styling
+    scope:
+    - markup.bold
+    - markup.italic
+    settings:
+      foreground: "#448C27"
+  - name: Markup Inline
+    scope: markup.inline.raw
+    settings:
+      fontStyle: ''
+      foreground: "#9C5D27"
+  - name: "-----------------------------------"
+    settings: {}
+  - name: 'Extra: Diff Range'
+    scope:
+    - meta.diff.range
+    - meta.diff.index
+    - meta.separator
+    settings:
+      background: "#DDDDFF"
+      foreground: "#434343"
+  - name: 'Extra: Diff From'
+    scope: meta.diff.header.from-file
+    settings:
+      background: "#FFDDDD"
+      foreground: "#434343"
+  - name: 'Extra: Diff To'
+    scope: meta.diff.header.to-file
+    settings:
+      background: "#DDFFDD"
+      foreground: "#434343"
+  - name: 'JSX: Tags'
+    scope:
+    - punctuation.definition.tag.js
+    - punctuation.definition.tag.begin.js
+    - punctuation.definition.tag.end.js
+    settings:
+      foreground: "#91B3E0"
+  - name: 'JSX: InnerText'
+    scope: meta.jsx.children.js
+    settings:
+      foreground: "#333333ff"
+  colors:
+    focusBorder: "#A6B39B"
+    pickerGroup.foreground: "#A6B39B"
+    pickerGroup.border: "#749351"
+    list.activeSelectionForeground: "#6c6c6c"
+    list.focusBackground: "#CADEB9"
+    list.hoverBackground: "#e0e0e0"
+    list.activeSelectionBackground: "#c4d9b1"
+    list.inactiveSelectionBackground: "#d3dbcd"
+    list.highlightForeground: "#9769dc"
+    selection.background: "#C9D0D9"
+    editor.background: "#F5F5F5"
+    editorWhitespace.foreground: "#AAAAAA"
+    editor.lineHighlightBackground: "#E4F6D4"
+    editorLineNumber.activeForeground: "#9769dc"
+    editor.selectionBackground: "#C9D0D9"
+    tab.modifiedBorder: "#f1897f"
+    panel.background: "#F5F5F5"
+    sideBar.background: "#F2F2F2"
+    sideBarSectionHeader.background: "#ede8ef"
+    editorLineNumber.foreground: "#6D705B"
+    editorCursor.foreground: "#54494B"
+    inputOption.activeBorder: "#adafb7"
+    dropdown.background: "#F5F5F5"
+    editor.findMatchBackground: "#BF9CAC"
+    editor.findMatchHighlightBackground: "#edc9d8"
+    peekViewEditor.matchHighlightBackground: "#C2DFE3"
+    peekViewTitle.background: "#F2F8FC"
+    peekViewEditor.background: "#F2F8FC"
+    peekViewResult.background: "#F2F8FC"
+    peekView.border: "#705697"
+    peekViewResult.matchHighlightBackground: "#93C6D6"
+    statusBar.background: "#705697"
+    statusBar.noFolderBackground: "#705697"
+    statusBar.debuggingBackground: "#705697"
+    statusBarItem.remoteBackground: "#4e3c69"
+    activityBar.background: "#EDEDF5"
+    activityBar.foreground: "#705697"
+    activityBarBadge.background: "#705697"
+    titleBar.activeBackground: "#c4b7d7"
+    button.background: "#705697"
+    editorGroup.dropBackground: "#C9D0D988"
+    inputValidation.infoBorder: "#4ec1e5"
+    inputValidation.infoBackground: "#f2fcff"
+    inputValidation.warningBackground: "#fffee2"
+    inputValidation.warningBorder: "#ffe055"
+    inputValidation.errorBackground: "#ffeaea"
+    inputValidation.errorBorder: "#f1897f"
+    errorForeground: "#f1897f"
+    badge.background: "#705697AA"
+    progressBar.background: "#705697"
+    walkThrough.embeddedEditorBackground: "#00000014"
+solarized-dark-color-theme.json:
+  name: Solarized (dark)
+  tokenColors:
+  - settings:
+      background: "#002B36"
+      foreground: "#93A1A1"
+  - scope:
+    - meta.embedded
+    - source.groovy.embedded
+    settings:
+      background: "#002B36"
+      foreground: "#93A1A1"
+  - name: Comment
+    scope: comment
+    settings:
+      fontStyle: italic
+      foreground: "#657B83"
+  - name: String
+    scope: string
+    settings:
+      foreground: "#2AA198"
+  - name: Regexp
+    scope: string.regexp
+    settings:
+      foreground: "#D30102"
+  - name: Number
+    scope: constant.numeric
+    settings:
+      foreground: "#D33682"
+  - name: Variable
+    scope:
+    - variable.language
+    - variable.other
+    settings:
+      foreground: "#268BD2"
+  - name: Keyword
+    scope: keyword
+    settings:
+      foreground: "#859900"
+  - name: Storage
+    scope: storage
+    settings:
+      fontStyle: bold
+      foreground: "#93A1A1"
+  - name: Class name
+    scope:
+    - entity.name.class
+    - entity.name.type
+    settings:
+      fontStyle: ''
+      foreground: "#CB4B16"
+  - name: Function name
+    scope: entity.name.function
+    settings:
+      foreground: "#268BD2"
+  - name: Variable start
+    scope: punctuation.definition.variable
+    settings:
+      foreground: "#859900"
+  - name: Embedded code markers
+    scope:
+    - punctuation.section.embedded.begin
+    - punctuation.section.embedded.end
+    settings:
+      foreground: "#D30102"
+  - name: Built-in constant
+    scope:
+    - constant.language
+    - meta.preprocessor
+    settings:
+      foreground: "#B58900"
+  - name: Support.construct
+    scope:
+    - support.function.construct
+    - keyword.other.new
+    settings:
+      foreground: "#CB4B16"
+  - name: User-defined constant
+    scope:
+    - constant.character
+    - constant.other
+    settings:
+      foreground: "#CB4B16"
+  - name: Inherited class
+    scope: entity.other.inherited-class
+    settings:
+      foreground: "#6C71C4"
+  - name: Function argument
+    scope: variable.parameter
+    settings: {}
+  - name: Tag name
+    scope: entity.name.tag
+    settings:
+      foreground: "#268BD2"
+  - name: Tag start/end
+    scope: punctuation.definition.tag
+    settings:
+      foreground: "#657B83"
+  - name: Tag attribute
+    scope: entity.other.attribute-name
+    settings:
+      foreground: "#93A1A1"
+  - name: Library function
+    scope: support.function
+    settings:
+      foreground: "#268BD2"
+  - name: Continuation
+    scope: punctuation.separator.continuation
+    settings:
+      foreground: "#D30102"
+  - name: Library constant
+    scope: support.constant
+    settings: {}
+  - name: Library class/type
+    scope:
+    - support.type
+    - support.class
+    settings:
+      foreground: "#859900"
+  - name: Library Exception
+    scope: support.type.exception
+    settings:
+      foreground: "#CB4B16"
+  - name: Library variable
+    scope: support.other.variable
+    settings: {}
+  - name: Invalid
+    scope: invalid
+    settings: {}
+  - name: 'diff: header'
+    scope:
+    - meta.diff
+    - meta.diff.header
+    settings:
+      background: "#b58900"
+      fontStyle: italic
+      foreground: "#E0EDDD"
+  - name: 'diff: deleted'
+    scope: markup.deleted
+    settings:
+      background: "#eee8d5"
+      fontStyle: ''
+      foreground: "#dc322f"
+  - name: 'diff: changed'
+    scope: markup.changed
+    settings:
+      background: "#eee8d5"
+      fontStyle: ''
+      foreground: "#cb4b16"
+  - name: 'diff: inserted'
+    scope: markup.inserted
+    settings:
+      background: "#eee8d5"
+      foreground: "#219186"
+  - name: Markup Quote
+    scope: markup.quote
+    settings:
+      foreground: "#859900"
+  - name: Markup Lists
+    scope: markup.list
+    settings:
+      foreground: "#B58900"
+  - name: Markup Styling
+    scope:
+    - markup.bold
+    - markup.italic
+    settings:
+      foreground: "#D33682"
+  - name: Markup Inline
+    scope: markup.inline.raw
+    settings:
+      fontStyle: ''
+      foreground: "#2AA198"
+  - name: Markup Headings
+    scope: markup.heading
+    settings:
+      foreground: "#268BD2"
+  - name: Markup Setext Header
+    scope: markup.heading.setext
+    settings:
+      fontStyle: ''
+      foreground: "#268BD2"
+  colors:
+    focusBorder: "#2AA19899"
+    selection.background: "#2AA19899"
+    input.background: "#003847"
+    input.foreground: "#93A1A1"
+    input.placeholderForeground: "#93A1A1AA"
+    inputOption.activeBorder: "#2AA19899"
+    inputValidation.infoBorder: "#363b5f"
+    inputValidation.infoBackground: "#052730"
+    inputValidation.warningBackground: "#5d5938"
+    inputValidation.warningBorder: "#9d8a5e"
+    inputValidation.errorBackground: "#571b26"
+    inputValidation.errorBorder: "#a92049"
+    errorForeground: "#ffeaea"
+    badge.background: "#047aa6"
+    progressBar.background: "#047aa6"
+    dropdown.background: "#00212B"
+    dropdown.border: "#2AA19899"
+    button.background: "#2AA19899"
+    list.activeSelectionBackground: "#005A6F"
+    list.focusBackground: "#005A6F"
+    list.hoverBackground: "#004454AA"
+    list.inactiveSelectionBackground: "#00445488"
+    list.dropBackground: "#00445488"
+    list.highlightForeground: "#1ebcc5"
+    editor.background: "#002B36"
+    editorWidget.background: "#00212B"
+    editorCursor.foreground: "#D30102"
+    editorWhitespace.foreground: "#93A1A180"
+    editor.lineHighlightBackground: "#073642"
+    editorLineNumber.activeForeground: "#949494"
+    editor.selectionBackground: "#274642"
+    editorIndentGuide.background: "#93A1A180"
+    editorIndentGuide.activeBackground: "#C3E1E180"
+    editorHoverWidget.background: "#004052"
+    editorMarkerNavigationError.background: "#AB395B"
+    editorMarkerNavigationWarning.background: "#5B7E7A"
+    editor.selectionHighlightBackground: "#005A6FAA"
+    editor.wordHighlightBackground: "#004454AA"
+    editor.wordHighlightStrongBackground: "#005A6FAA"
+    peekViewResult.background: "#00212B"
+    peekViewEditor.background: "#10192c"
+    peekViewTitle.background: "#00212B"
+    peekView.border: "#2b2b4a"
+    peekViewEditor.matchHighlightBackground: "#7744AA40"
+    titleBar.activeBackground: "#002C39"
+    editorGroup.border: "#00212B"
+    editorGroup.dropBackground: "#2AA19844"
+    editorGroupHeader.tabsBackground: "#004052"
+    tab.activeForeground: "#d6dbdb"
+    tab.activeBackground: "#002B37"
+    tab.inactiveForeground: "#93A1A1"
+    tab.inactiveBackground: "#004052"
+    tab.border: "#003847"
+    tab.modifiedBorder: "#268bd2"
+    activityBar.background: "#003847"
+    panel.border: "#2b2b4a"
+    sideBar.background: "#00212B"
+    sideBarTitle.foreground: "#93A1A1"
+    statusBar.foreground: "#93A1A1"
+    statusBar.background: "#00212B"
+    statusBar.debuggingBackground: "#00212B"
+    statusBar.noFolderBackground: "#00212B"
+    statusBarItem.remoteBackground: "#2AA19899"
+    statusBarItem.prominentBackground: "#003847"
+    statusBarItem.prominentHoverBackground: "#003847"
+    debugToolBar.background: "#00212B"
+    debugExceptionWidget.background: "#00212B"
+    debugExceptionWidget.border: "#AB395B"
+    pickerGroup.foreground: "#2AA19899"
+    pickerGroup.border: "#2AA19899"
+    terminal.ansiBlack: "#073642"
+    terminal.ansiRed: "#dc322f"
+    terminal.ansiGreen: "#859900"
+    terminal.ansiYellow: "#b58900"
+    terminal.ansiBlue: "#268bd2"
+    terminal.ansiMagenta: "#d33682"
+    terminal.ansiCyan: "#2aa198"
+    terminal.ansiWhite: "#eee8d5"
+    terminal.ansiBrightBlack: "#586e75"
+    terminal.ansiBrightRed: "#cb4b16"
+    terminal.ansiBrightGreen: "#586e75"
+    terminal.ansiBrightYellow: "#657b83"
+    terminal.ansiBrightBlue: "#839496"
+    terminal.ansiBrightMagenta: "#6c71c4"
+    terminal.ansiBrightCyan: "#93a1a1"
+    terminal.ansiBrightWhite: "#fdf6e3"
+tomorrow-night-blue-theme.json:
+  type: dark
+  colors:
+    focusBorder: "#bbdaff"
+    errorForeground: "#a92049"
+    input.background: "#001733"
+    dropdown.background: "#001733"
+    list.focusBackground: "#ffffff60"
+    list.activeSelectionBackground: "#ffffff60"
+    list.inactiveSelectionBackground: "#ffffff40"
+    list.hoverBackground: "#ffffff30"
+    list.highlightForeground: "#bbdaff"
+    pickerGroup.foreground: "#bbdaff"
+    editor.background: "#002451"
+    editor.foreground: "#ffffff"
+    editor.selectionBackground: "#003f8e"
+    editor.lineHighlightBackground: "#00346e"
+    editorLineNumber.activeForeground: "#949494"
+    editorCursor.foreground: "#ffffff"
+    editorWhitespace.foreground: "#404f7d"
+    editorWidget.background: "#001c40"
+    editorHoverWidget.background: "#001c40"
+    editorHoverWidget.border: "#ffffff44"
+    editorGroup.border: "#404f7d"
+    editorGroupHeader.tabsBackground: "#001733"
+    editorGroup.dropBackground: "#25375daa"
+    peekViewResult.background: "#001c40"
+    tab.inactiveBackground: "#001c40"
+    tab.modifiedBorder: "#FFEEAD"
+    debugToolBar.background: "#001c40"
+    titleBar.activeBackground: "#001126"
+    statusBar.background: "#001126"
+    statusBarItem.remoteBackground: "#0e639c"
+    statusBar.noFolderBackground: "#001126"
+    statusBar.debuggingBackground: "#001126"
+    activityBar.background: "#001733"
+    progressBar.background: "#bbdaffcc"
+    badge.background: "#bbdaffcc"
+    badge.foreground: "#001733"
+    sideBar.background: "#001c40"
+    terminal.ansiBlack: "#111111"
+    terminal.ansiRed: "#ff9da4"
+    terminal.ansiGreen: "#d1f1a9"
+    terminal.ansiYellow: "#ffeead"
+    terminal.ansiBlue: "#bbdaff"
+    terminal.ansiMagenta: "#ebbbff"
+    terminal.ansiCyan: "#99ffff"
+    terminal.ansiWhite: "#cccccc"
+    terminal.ansiBrightBlack: "#333333"
+    terminal.ansiBrightRed: "#ff7882"
+    terminal.ansiBrightGreen: "#b8f171"
+    terminal.ansiBrightYellow: "#ffe580"
+    terminal.ansiBrightBlue: "#80baff"
+    terminal.ansiBrightMagenta: "#d778ff"
+    terminal.ansiBrightCyan: "#78ffff"
+    terminal.ansiBrightWhite: "#ffffff"
+  tokenColors:
+  - settings:
+      background: "#002451"
+      foreground: "#FFFFFF"
+  - scope:
+    - meta.embedded
+    - source.groovy.embedded
+    settings:
+      background: "#002451"
+      foreground: "#FFFFFF"
+  - name: Comment
+    scope: comment
+    settings:
+      foreground: "#7285B7"
+  - name: Foreground, Operator
+    scope: keyword.operator.class, keyword.operator, constant.other, source.php.embedded.line
+    settings:
+      fontStyle: ''
+      foreground: "#FFFFFF"
+  - name: Variable, String Link, Regular Expression, Tag Name, GitGutter deleted
+    scope: variable, support.other.variable, string.other.link, string.regexp, entity.name.tag,
+      entity.other.attribute-name, meta.tag, declaration.tag, markup.deleted.git_gutter
+    settings:
+      foreground: "#FF9DA4"
+  - name: Number, Constant, Function Argument, Tag Attribute, Embedded
+    scope: constant.numeric, constant.language, support.constant, constant.character,
+      variable.parameter, punctuation.section.embedded, keyword.other.unit
+    settings:
+      fontStyle: ''
+      foreground: "#FFC58F"
+  - name: Class, Support
+    scope: entity.name.class, entity.name.type, support.type, support.class
+    settings:
+      fontStyle: ''
+      foreground: "#FFEEAD"
+  - name: String, Symbols, Inherited Class, Markup Heading, GitGutter inserted
+    scope: string, constant.other.symbol, entity.other.inherited-class, markup.heading,
+      markup.inserted.git_gutter
+    settings:
+      fontStyle: ''
+      foreground: "#D1F1A9"
+  - name: Operator, Misc
+    scope: keyword.operator, constant.other.color
+    settings:
+      foreground: "#99FFFF"
+  - name: Function, Special Method, Block Level, GitGutter changed
+    scope: entity.name.function, meta.function-call, support.function, keyword.other.special-method,
+      meta.block-level, markup.changed.git_gutter
+    settings:
+      fontStyle: ''
+      foreground: "#BBDAFF"
+  - name: Keyword, Storage
+    scope: keyword, storage, storage.type, entity.name.tag.css
+    settings:
+      fontStyle: ''
+      foreground: "#EBBBFF"
+  - name: Invalid
+    scope: invalid
+    settings:
+      background: "#F99DA5"
+      fontStyle: ''
+      foreground: "#FFFFFF"
+  - name: Separator
+    scope: meta.separator
+    settings:
+      background: "#BBDAFE"
+      foreground: "#FFFFFF"
+  - name: Deprecated
+    scope: invalid.deprecated
+    settings:
+      background: "#EBBBFF"
+      fontStyle: ''
+      foreground: "#FFFFFF"
+  - name: Diff foreground
+    scope: markup.inserted.diff, markup.deleted.diff, meta.diff.header.to-file, meta.diff.header.from-file
+    settings:
+      foreground: "#FFFFFF"
+  - name: Diff insertion
+    scope: markup.inserted.diff, meta.diff.header.to-file
+    settings:
+      foreground: "#718c00"
+  - name: Diff deletion
+    scope: markup.deleted.diff, meta.diff.header.from-file
+    settings:
+      foreground: "#c82829"
+  - name: Diff header
+    scope: meta.diff.header.from-file, meta.diff.header.to-file
+    settings:
+      foreground: "#FFFFFF"
+      background: "#4271ae"
+  - name: Diff range
+    scope: meta.diff.range
+    settings:
+      fontStyle: italic
+      foreground: "#3e999f"
+  - name: Markup Quote
+    scope: markup.quote
+    settings:
+      foreground: "#FFC58F"
+  - name: Markup Lists
+    scope: markup.list
+    settings:
+      foreground: "#BBDAFF"
+  - name: Markup Styling
+    scope: markup.bold, markup.italic
+    settings:
+      foreground: "#FFC58F"
+  - name: Markup Inline
+    scope: markup.inline.raw
+    settings:
+      fontStyle: ''
+      foreground: "#FF9DA4"
+  - scope: token.info-token
+    settings:
+      foreground: "#6796e6"
+  - scope: token.warn-token
+    settings:
+      foreground: "#cd9731"
+  - scope: token.error-token
+    settings:
+      foreground: "#f44747"
+  - scope: token.debug-token
+    settings:
+      foreground: "#b267e6"
+solarized-light-color-theme.json:
+  name: Solarized (light)
+  tokenColors:
+  - settings:
+      background: "#FDF6E3"
+      foreground: "#657B83"
+  - scope:
+    - meta.embedded
+    - source.groovy.embedded
+    settings:
+      background: "#FDF6E3"
+      foreground: "#657B83"
+  - name: Comment
+    scope: comment
+    settings:
+      fontStyle: italic
+      foreground: "#93A1A1"
+  - name: String
+    scope: string
+    settings:
+      foreground: "#2AA198"
+  - name: Regexp
+    scope: string.regexp
+    settings:
+      foreground: "#D30102"
+  - name: Number
+    scope: constant.numeric
+    settings:
+      foreground: "#D33682"
+  - name: Variable
+    scope:
+    - variable.language
+    - variable.other
+    settings:
+      foreground: "#268BD2"
+  - name: Keyword
+    scope: keyword
+    settings:
+      foreground: "#859900"
+  - name: Storage
+    scope: storage
+    settings:
+      fontStyle: bold
+      foreground: "#073642"
+  - name: Class name
+    scope:
+    - entity.name.class
+    - entity.name.type
+    settings:
+      foreground: "#268BD2"
+  - name: Function name
+    scope: entity.name.function
+    settings:
+      foreground: "#268BD2"
+  - name: Variable start
+    scope: punctuation.definition.variable
+    settings:
+      foreground: "#859900"
+  - name: Embedded code markers
+    scope:
+    - punctuation.section.embedded.begin
+    - punctuation.section.embedded.end
+    settings:
+      foreground: "#D30102"
+  - name: Built-in constant
+    scope:
+    - constant.language
+    - meta.preprocessor
+    settings:
+      foreground: "#B58900"
+  - name: Support.construct
+    scope:
+    - support.function.construct
+    - keyword.other.new
+    settings:
+      foreground: "#D30102"
+  - name: User-defined constant
+    scope:
+    - constant.character
+    - constant.other
+    settings:
+      foreground: "#CB4B16"
+  - name: Inherited class
+    scope: entity.other.inherited-class
+    settings: {}
+  - name: Function argument
+    scope: variable.parameter
+    settings: {}
+  - name: Tag name
+    scope: entity.name.tag
+    settings:
+      foreground: "#268BD2"
+  - name: Tag start/end
+    scope:
+    - punctuation.definition.tag.begin
+    - punctuation.definition.tag.end
+    settings:
+      foreground: "#93A1A1"
+  - name: Tag attribute
+    scope: entity.other.attribute-name
+    settings:
+      foreground: "#93A1A1"
+  - name: Library function
+    scope: support.function
+    settings:
+      foreground: "#268BD2"
+  - name: Continuation
+    scope: punctuation.separator.continuation
+    settings:
+      foreground: "#D30102"
+  - name: Library constant
+    scope: support.constant
+    settings: {}
+  - name: Library class/type
+    scope:
+    - support.type
+    - support.class
+    settings:
+      foreground: "#859900"
+  - name: Library Exception
+    scope: support.type.exception
+    settings:
+      foreground: "#CB4B16"
+  - name: Library variable
+    scope: support.other.variable
+    settings: {}
+  - name: Invalid
+    scope: invalid
+    settings: {}
+  - name: 'diff: header'
+    scope:
+    - meta.diff
+    - meta.diff.header
+    settings:
+      background: "#b58900"
+      fontStyle: italic
+      foreground: "#E0EDDD"
+  - name: 'diff: deleted'
+    scope: markup.deleted
+    settings:
+      background: "#eee8d5"
+      fontStyle: ''
+      foreground: "#dc322f"
+  - name: 'diff: changed'
+    scope: markup.changed
+    settings:
+      background: "#eee8d5"
+      fontStyle: ''
+      foreground: "#cb4b16"
+  - name: 'diff: inserted'
+    scope: markup.inserted
+    settings:
+      background: "#eee8d5"
+      foreground: "#219186"
+  - name: Markup Quote
+    scope: markup.quote
+    settings:
+      foreground: "#859900"
+  - name: Markup Lists
+    scope: markup.list
+    settings:
+      foreground: "#B58900"
+  - name: Markup Styling
+    scope:
+    - markup.bold
+    - markup.italic
+    settings:
+      foreground: "#D33682"
+  - name: Markup Inline
+    scope: markup.inline.raw
+    settings:
+      fontStyle: ''
+      foreground: "#2AA198"
+  - name: Markup Headings
+    scope: markup.heading
+    settings:
+      foreground: "#268BD2"
+  - name: Markup Setext Header
+    scope: markup.heading.setext
+    settings:
+      fontStyle: ''
+      foreground: "#268BD2"
+  colors:
+    focusBorder: "#D3AF86"
+    input.background: "#DDD6C1"
+    input.foreground: "#586E75"
+    input.placeholderForeground: "#586E75AA"
+    inputOption.activeBorder: "#D3AF86"
+    badge.background: "#B58900AA"
+    progressBar.background: "#B58900"
+    dropdown.background: "#EEE8D5"
+    dropdown.border: "#D3AF86"
+    button.background: "#AC9D57"
+    selection.background: "#CCC4B0"
+    list.activeSelectionBackground: "#DFCA88"
+    list.activeSelectionForeground: "#6C6C6C"
+    list.focusBackground: "#DFCA8866"
+    list.hoverBackground: "#DFCA8844"
+    list.inactiveSelectionBackground: "#D1CBB8"
+    list.highlightForeground: "#B58900"
+    editor.background: "#FDF6E3"
+    editorWidget.background: "#EEE8D5"
+    editorCursor.foreground: "#657B83"
+    editorWhitespace.foreground: "#586E7580"
+    editor.lineHighlightBackground: "#EEE8D5"
+    editor.selectionBackground: "#EEE8D5"
+    editorIndentGuide.background: "#586E7580"
+    editorIndentGuide.activeBackground: "#081E2580"
+    editorHoverWidget.background: "#CCC4B0"
+    editorLineNumber.activeForeground: "#567983"
+    peekViewResult.background: "#EEE8D5"
+    peekViewEditor.background: "#FFFBF2"
+    peekViewTitle.background: "#EEE8D5"
+    peekView.border: "#B58900"
+    peekViewEditor.matchHighlightBackground: "#7744AA40"
+    titleBar.activeBackground: "#EEE8D5"
+    editorGroup.border: "#DDD6C1"
+    editorGroup.dropBackground: "#DDD6C1AA"
+    editorGroupHeader.tabsBackground: "#D9D2C2"
+    tab.border: "#DDD6C1"
+    tab.activeBackground: "#FDF6E3"
+    tab.inactiveForeground: "#586E75"
+    tab.inactiveBackground: "#D3CBB7"
+    tab.modifiedBorder: "#cb4b16"
+    activityBar.background: "#DDD6C1"
+    activityBar.foreground: "#584c27"
+    activityBar.dropBackground: "#EEE8D5"
+    activityBarBadge.background: "#B58900"
+    panel.border: "#DDD6C1"
+    sideBar.background: "#EEE8D5"
+    sideBarTitle.foreground: "#586E75"
+    statusBar.foreground: "#586E75"
+    statusBar.background: "#EEE8D5"
+    statusBar.debuggingBackground: "#EEE8D5"
+    statusBar.noFolderBackground: "#EEE8D5"
+    statusBarItem.remoteBackground: "#AC9D57"
+    statusBarItem.prominentBackground: "#DDD6C1"
+    statusBarItem.prominentHoverBackground: "#DDD6C199"
+    debugToolBar.background: "#DDD6C1"
+    debugExceptionWidget.background: "#DDD6C1"
+    debugExceptionWidget.border: "#AB395B"
+    pickerGroup.border: "#2AA19899"
+    pickerGroup.foreground: "#2AA19899"
+    extensionButton.prominentBackground: "#b58900"
+    extensionButton.prominentHoverBackground: "#584c27aa"
+    terminal.ansiBlack: "#073642"
+    terminal.ansiRed: "#dc322f"
+    terminal.ansiGreen: "#859900"
+    terminal.ansiYellow: "#b58900"
+    terminal.ansiBlue: "#268bd2"
+    terminal.ansiMagenta: "#d33682"
+    terminal.ansiCyan: "#2aa198"
+    terminal.ansiWhite: "#eee8d5"
+    terminal.ansiBrightBlack: "#586e75"
+    terminal.ansiBrightRed: "#cb4b16"
+    terminal.ansiBrightGreen: "#586e75"
+    terminal.ansiBrightYellow: "#657b83"
+    terminal.ansiBrightBlue: "#839496"
+    terminal.ansiBrightMagenta: "#6c71c4"
+    terminal.ansiBrightCyan: "#93a1a1"
+    terminal.ansiBrightWhite: "#eee8d5"
+    walkThrough.embeddedEditorBackground: "#00000014"
+vs_minimal-icon-theme.json:
+  iconDefinitions:
+    _root_folder_dark:
+      iconPath: "./images/RootFolder_16x_inverse.svg"
+    _root_folder_open_dark:
+      iconPath: "./images/RootFolderOpen_16x_inverse.svg"
+    _folder_dark:
+      iconPath: "./images/Folder_16x_inverse.svg"
+    _folder_open_dark:
+      iconPath: "./images/FolderOpen_16x_inverse.svg"
+    _file_dark:
+      iconPath: "./images/Document_16x_inverse.svg"
+    _root_folder:
+      iconPath: "./images/RootFolder_16x.svg"
+    _root_folder_open:
+      iconPath: "./images/RootFolderOpen_16x.svg"
+    _folder_light:
+      iconPath: "./images/Folder_16x.svg"
+    _folder_open_light:
+      iconPath: "./images/FolderOpen_16x.svg"
+    _file_light:
+      iconPath: "./images/Document_16x.svg"
+  folderExpanded: _folder_open_dark
+  folder: _folder_dark
+  file: _file_dark
+  rootFolderExpanded: _root_folder_open_dark
+  rootFolder: _root_folder_dark
+  fileExtensions: {}
+  fileNames: {}
+  languageIds: {}
+  light:
+    folderExpanded: _folder_open_light
+    folder: _folder_light
+    rootFolderExpanded: _root_folder_open
+    rootFolder: _root_folder
+    file: _file_light
+    fileExtensions: {}
+    fileNames: {}
+    languageIds: {}
+  highContrast: {}
+dark_vs.json:
+  "$schema": vscode://schemas/color-theme
+  name: Dark (Visual Studio)
+  include: "./dark_defaults.json"
+  tokenColors:
+  - scope:
+    - meta.embedded
+    - source.groovy.embedded
+    settings:
+      foreground: "#D4D4D4"
+  - scope: emphasis
+    settings:
+      fontStyle: italic
+  - scope: strong
+    settings:
+      fontStyle: bold
+  - scope: header
+    settings:
+      foreground: "#000080"
+  - scope: comment
+    settings:
+      foreground: "#6A9955"
+  - scope: constant.language
+    settings:
+      foreground: "#569cd6"
+  - scope:
+    - constant.numeric
+    settings:
+      foreground: "#b5cea8"
+  - scope: constant.regexp
+    settings:
+      foreground: "#646695"
+  - scope: entity.name.tag
+    settings:
+      foreground: "#569cd6"
+  - scope: entity.name.tag.css
+    settings:
+      foreground: "#d7ba7d"
+  - scope: entity.other.attribute-name
+    settings:
+      foreground: "#9cdcfe"
+  - scope:
+    - entity.other.attribute-name.class.css
+    - entity.other.attribute-name.class.mixin.css
+    - entity.other.attribute-name.id.css
+    - entity.other.attribute-name.parent-selector.css
+    - entity.other.attribute-name.pseudo-class.css
+    - entity.other.attribute-name.pseudo-element.css
+    - source.css.less entity.other.attribute-name.id
+    - entity.other.attribute-name.attribute.scss
+    - entity.other.attribute-name.scss
+    settings:
+      foreground: "#d7ba7d"
+  - scope: invalid
+    settings:
+      foreground: "#f44747"
+  - scope: markup.underline
+    settings:
+      fontStyle: underline
+  - scope: markup.bold
+    settings:
+      fontStyle: bold
+      foreground: "#569cd6"
+  - scope: markup.heading
+    settings:
+      fontStyle: bold
+      foreground: "#569cd6"
+  - scope: markup.italic
+    settings:
+      fontStyle: italic
+  - scope: markup.inserted
+    settings:
+      foreground: "#b5cea8"
+  - scope: markup.deleted
+    settings:
+      foreground: "#ce9178"
+  - scope: markup.changed
+    settings:
+      foreground: "#569cd6"
+  - scope: punctuation.definition.quote.begin.markdown
+    settings:
+      foreground: "#6A9955"
+  - scope: punctuation.definition.list.begin.markdown
+    settings:
+      foreground: "#6796e6"
+  - scope: markup.inline.raw
+    settings:
+      foreground: "#ce9178"
+  - name: brackets of XML/HTML tags
+    scope: punctuation.definition.tag
+    settings:
+      foreground: "#808080"
+  - scope: meta.preprocessor
+    settings:
+      foreground: "#569cd6"
+  - scope: meta.preprocessor.string
+    settings:
+      foreground: "#ce9178"
+  - scope: meta.preprocessor.numeric
+    settings:
+      foreground: "#b5cea8"
+  - scope: meta.structure.dictionary.key.python
+    settings:
+      foreground: "#9cdcfe"
+  - scope: meta.diff.header
+    settings:
+      foreground: "#569cd6"
+  - scope: storage
+    settings:
+      foreground: "#569cd6"
+  - scope: storage.type
+    settings:
+      foreground: "#569cd6"
+  - scope: storage.modifier
+    settings:
+      foreground: "#569cd6"
+  - scope: string
+    settings:
+      foreground: "#ce9178"
+  - scope: string.tag
+    settings:
+      foreground: "#ce9178"
+  - scope: string.value
+    settings:
+      foreground: "#ce9178"
+  - scope: string.regexp
+    settings:
+      foreground: "#d16969"
+  - name: String interpolation
+    scope:
+    - punctuation.definition.template-expression.begin
+    - punctuation.definition.template-expression.end
+    - punctuation.section.embedded
+    settings:
+      foreground: "#569cd6"
+  - name: Reset JavaScript string interpolation expression
+    scope:
+    - meta.template.expression
+    settings:
+      foreground: "#d4d4d4"
+  - scope:
+    - support.type.vendored.property-name
+    - support.type.property-name
+    - variable.css
+    - variable.scss
+    - variable.other.less
+    - source.coffee.embedded
+    settings:
+      foreground: "#9cdcfe"
+  - scope: keyword
+    settings:
+      foreground: "#569cd6"
+  - scope: keyword.control
+    settings:
+      foreground: "#569cd6"
+  - scope: keyword.operator
+    settings:
+      foreground: "#d4d4d4"
+  - scope:
+    - keyword.operator.new
+    - keyword.operator.expression
+    - keyword.operator.cast
+    - keyword.operator.sizeof
+    - keyword.operator.instanceof
+    - keyword.operator.logical.python
+    settings:
+      foreground: "#569cd6"
+  - scope: keyword.other.unit
+    settings:
+      foreground: "#b5cea8"
+  - scope:
+    - punctuation.section.embedded.begin.php
+    - punctuation.section.embedded.end.php
+    settings:
+      foreground: "#569cd6"
+  - scope: support.function.git-rebase
+    settings:
+      foreground: "#9cdcfe"
+  - scope: constant.sha.git-rebase
+    settings:
+      foreground: "#b5cea8"
+  - name: coloring of the Java import and package identifiers
+    scope:
+    - storage.modifier.import.java
+    - variable.language.wildcard.java
+    - storage.modifier.package.java
+    settings:
+      foreground: "#d4d4d4"
+  - name: this.self
+    scope: variable.language
+    settings:
+      foreground: "#569cd6"
+dark_defaults.json:
+  "$schema": vscode://schemas/color-theme
+  name: Dark Default Colors
+  colors:
+    editor.background: "#1E1E1E"
+    editor.foreground: "#D4D4D4"
+    editor.inactiveSelectionBackground: "#3A3D41"
+    editorIndentGuide.background: "#404040"
+    editorIndentGuide.activeBackground: "#707070"
+    editor.selectionHighlightBackground: "#ADD6FF26"
+    list.dropBackground: "#383B3D"
+    activityBarBadge.background: "#007ACC"
+    sideBarTitle.foreground: "#BBBBBB"
+    input.placeholderForeground: "#A6A6A6"
+    settings.textInputBackground: "#292929"
+    settings.numberInputBackground: "#292929"
+    menu.background: "#252526"
+    menu.foreground: "#CCCCCC"
+    statusBarItem.remoteForeground: "#FFF"
+    statusBarItem.remoteBackground: "#16825D"
+light_vs.json:
+  "$schema": vscode://schemas/color-theme
+  name: Light (Visual Studio)
+  include: "./light_defaults.json"
+  tokenColors:
+  - scope:
+    - meta.embedded
+    - source.groovy.embedded
+    settings:
+      foreground: "#000000ff"
+  - scope: emphasis
+    settings:
+      fontStyle: italic
+  - scope: strong
+    settings:
+      fontStyle: bold
+  - scope: meta.diff.header
+    settings:
+      foreground: "#000080"
+  - scope: comment
+    settings:
+      foreground: "#008000"
+  - scope: constant.language
+    settings:
+      foreground: "#0000ff"
+  - scope:
+    - constant.numeric
+    settings:
+      foreground: "#09885a"
+  - scope: constant.regexp
+    settings:
+      foreground: "#811f3f"
+  - name: css tags in selectors, xml tags
+    scope: entity.name.tag
+    settings:
+      foreground: "#800000"
+  - scope: entity.name.selector
+    settings:
+      foreground: "#800000"
+  - scope: entity.other.attribute-name
+    settings:
+      foreground: "#ff0000"
+  - scope:
+    - entity.other.attribute-name.class.css
+    - entity.other.attribute-name.class.mixin.css
+    - entity.other.attribute-name.id.css
+    - entity.other.attribute-name.parent-selector.css
+    - entity.other.attribute-name.pseudo-class.css
+    - entity.other.attribute-name.pseudo-element.css
+    - source.css.less entity.other.attribute-name.id
+    - entity.other.attribute-name.attribute.scss
+    - entity.other.attribute-name.scss
+    settings:
+      foreground: "#800000"
+  - scope: invalid
+    settings:
+      foreground: "#cd3131"
+  - scope: markup.underline
+    settings:
+      fontStyle: underline
+  - scope: markup.bold
+    settings:
+      fontStyle: bold
+      foreground: "#000080"
+  - scope: markup.heading
+    settings:
+      fontStyle: bold
+      foreground: "#800000"
+  - scope: markup.italic
+    settings:
+      fontStyle: italic
+  - scope: markup.inserted
+    settings:
+      foreground: "#09885a"
+  - scope: markup.deleted
+    settings:
+      foreground: "#a31515"
+  - scope: markup.changed
+    settings:
+      foreground: "#0451a5"
+  - scope:
+    - punctuation.definition.quote.begin.markdown
+    - punctuation.definition.list.begin.markdown
+    settings:
+      foreground: "#0451a5"
+  - scope: markup.inline.raw
+    settings:
+      foreground: "#800000"
+  - name: brackets of XML/HTML tags
+    scope: punctuation.definition.tag
+    settings:
+      foreground: "#800000"
+  - scope: meta.preprocessor
+    settings:
+      foreground: "#0000ff"
+  - scope: meta.preprocessor.string
+    settings:
+      foreground: "#a31515"
+  - scope: meta.preprocessor.numeric
+    settings:
+      foreground: "#09885a"
+  - scope: meta.structure.dictionary.key.python
+    settings:
+      foreground: "#0451a5"
+  - scope: storage
+    settings:
+      foreground: "#0000ff"
+  - scope: storage.type
+    settings:
+      foreground: "#0000ff"
+  - scope: storage.modifier
+    settings:
+      foreground: "#0000ff"
+  - scope: string
+    settings:
+      foreground: "#a31515"
+  - scope:
+    - string.comment.buffered.block.pug
+    - string.quoted.pug
+    - string.interpolated.pug
+    - string.unquoted.plain.in.yaml
+    - string.unquoted.plain.out.yaml
+    - string.unquoted.block.yaml
+    - string.quoted.single.yaml
+    - string.quoted.double.xml
+    - string.quoted.single.xml
+    - string.unquoted.cdata.xml
+    - string.quoted.double.html
+    - string.quoted.single.html
+    - string.unquoted.html
+    - string.quoted.single.handlebars
+    - string.quoted.double.handlebars
+    settings:
+      foreground: "#0000ff"
+  - scope: string.regexp
+    settings:
+      foreground: "#811f3f"
+  - name: String interpolation
+    scope:
+    - punctuation.definition.template-expression.begin
+    - punctuation.definition.template-expression.end
+    - punctuation.section.embedded
+    settings:
+      foreground: "#0000ff"
+  - name: Reset JavaScript string interpolation expression
+    scope:
+    - meta.template.expression
+    settings:
+      foreground: "#000000"
+  - scope:
+    - support.constant.property-value
+    - support.constant.font-name
+    - support.constant.media-type
+    - support.constant.media
+    - constant.other.color.rgb-value
+    - constant.other.rgb-value
+    - support.constant.color
+    settings:
+      foreground: "#0451a5"
+  - scope:
+    - support.type.vendored.property-name
+    - support.type.property-name
+    - variable.css
+    - variable.scss
+    - variable.other.less
+    - source.coffee.embedded
+    settings:
+      foreground: "#ff0000"
+  - scope:
+    - support.type.property-name.json
+    settings:
+      foreground: "#0451a5"
+  - scope: keyword
+    settings:
+      foreground: "#0000ff"
+  - scope: keyword.control
+    settings:
+      foreground: "#0000ff"
+  - scope: keyword.operator
+    settings:
+      foreground: "#000000"
+  - scope:
+    - keyword.operator.new
+    - keyword.operator.expression
+    - keyword.operator.cast
+    - keyword.operator.sizeof
+    - keyword.operator.instanceof
+    - keyword.operator.logical.python
+    settings:
+      foreground: "#0000ff"
+  - scope: keyword.other.unit
+    settings:
+      foreground: "#09885a"
+  - scope:
+    - punctuation.section.embedded.begin.php
+    - punctuation.section.embedded.end.php
+    settings:
+      foreground: "#800000"
+  - scope: support.function.git-rebase
+    settings:
+      foreground: "#0451a5"
+  - scope: constant.sha.git-rebase
+    settings:
+      foreground: "#09885a"
+  - name: coloring of the Java import and package identifiers
+    scope:
+    - storage.modifier.import.java
+    - variable.language.wildcard.java
+    - storage.modifier.package.java
+    settings:
+      foreground: "#000000"
+  - name: this.self
+    scope: variable.language
+    settings:
+      foreground: "#0000ff"
+hc_black.json:
+  "$schema": vscode://schemas/color-theme
+  name: Dark High Contrast
+  include: "./hc_black_defaults.json"
+  colors:
+    selection.background: "#008000"
+    editor.selectionBackground: "#FFFFFF"
+    statusBarItem.remoteBackground: "#00000000"
+  tokenColors:
+  - name: Function declarations
+    scope:
+    - entity.name.function
+    - support.function
+    - support.constant.handlebars
+    settings:
+      foreground: "#DCDCAA"
+  - name: Types declaration and references
+    scope:
+    - meta.return-type
+    - support.class
+    - support.type
+    - entity.name.type
+    - entity.name.class
+    - storage.type.cs
+    - storage.type.generic.cs
+    - storage.type.modifier.cs
+    - storage.type.variable.cs
+    - storage.type.annotation.java
+    - storage.type.generic.java
+    - storage.type.java
+    - storage.type.object.array.java
+    - storage.type.primitive.array.java
+    - storage.type.primitive.java
+    - storage.type.token.java
+    - storage.type.groovy
+    - storage.type.annotation.groovy
+    - storage.type.parameters.groovy
+    - storage.type.generic.groovy
+    - storage.type.object.array.groovy
+    - storage.type.primitive.array.groovy
+    - storage.type.primitive.groovy
+    settings:
+      foreground: "#4EC9B0"
+  - name: Types declaration and references, TS grammar specific
+    scope:
+    - meta.type.cast.expr
+    - meta.type.new.expr
+    - support.constant.math
+    - support.constant.dom
+    - support.constant.json
+    - entity.other.inherited-class
+    settings:
+      foreground: "#4EC9B0"
+  - name: Control flow keywords
+    scope:
+    - keyword.control
+    - keyword.operator.new.cpp
+    - keyword.operator.delete.cpp
+    - keyword.other.using
+    - keyword.other.operator
+    settings:
+      foreground: "#C586C0"
+  - name: Variable and parameter name
+    scope:
+    - variable
+    - meta.definition.variable.name
+    - support.variable
+    settings:
+      foreground: "#9CDCFE"
+  - name: Object keys, TS grammar specific
+    scope:
+    - meta.object-literal.key
+    settings:
+      foreground: "#9CDCFE"
+  - name: CSS property value
+    scope:
+    - support.constant.property-value
+    - support.constant.font-name
+    - support.constant.media-type
+    - support.constant.media
+    - constant.other.color.rgb-value
+    - constant.other.rgb-value
+    - support.constant.color
+    settings:
+      foreground: "#CE9178"
+dark_plus.json:
+  "$schema": vscode://schemas/color-theme
+  name: Dark+ (default dark)
+  include: "./dark_vs.json"
+  tokenColors:
+  - name: Function declarations
+    scope:
+    - entity.name.function
+    - support.function
+    - support.constant.handlebars
+    settings:
+      foreground: "#DCDCAA"
+  - name: Types declaration and references
+    scope:
+    - meta.return-type
+    - support.class
+    - support.type
+    - entity.name.type
+    - entity.name.class
+    - storage.type.numeric.go
+    - storage.type.byte.go
+    - storage.type.boolean.go
+    - storage.type.string.go
+    - storage.type.uintptr.go
+    - storage.type.error.go
+    - storage.type.rune.go
+    - storage.type.cs
+    - storage.type.generic.cs
+    - storage.type.modifier.cs
+    - storage.type.variable.cs
+    - storage.type.annotation.java
+    - storage.type.generic.java
+    - storage.type.java
+    - storage.type.object.array.java
+    - storage.type.primitive.array.java
+    - storage.type.primitive.java
+    - storage.type.token.java
+    - storage.type.groovy
+    - storage.type.annotation.groovy
+    - storage.type.parameters.groovy
+    - storage.type.generic.groovy
+    - storage.type.object.array.groovy
+    - storage.type.primitive.array.groovy
+    - storage.type.primitive.groovy
+    settings:
+      foreground: "#4EC9B0"
+  - name: Types declaration and references, TS grammar specific
+    scope:
+    - meta.type.cast.expr
+    - meta.type.new.expr
+    - support.constant.math
+    - support.constant.dom
+    - support.constant.json
+    - entity.other.inherited-class
+    settings:
+      foreground: "#4EC9B0"
+  - name: Control flow keywords
+    scope:
+    - keyword.control
+    - keyword.operator.new.cpp
+    - keyword.operator.delete
+    - keyword.other.using
+    - keyword.other.operator
+    settings:
+      foreground: "#C586C0"
+  - name: Variable and parameter name
+    scope:
+    - variable
+    - meta.definition.variable.name
+    - support.variable
+    - entity.name.variable
+    settings:
+      foreground: "#9CDCFE"
+  - name: Object keys, TS grammar specific
+    scope:
+    - meta.object-literal.key
+    settings:
+      foreground: "#9CDCFE"
+  - name: CSS property value
+    scope:
+    - support.constant.property-value
+    - support.constant.font-name
+    - support.constant.media-type
+    - support.constant.media
+    - constant.other.color.rgb-value
+    - constant.other.rgb-value
+    - support.constant.color
+    settings:
+      foreground: "#CE9178"
+  - name: Regular expression groups
+    scope:
+    - punctuation.definition.group.regexp
+    - punctuation.definition.group.assertion.regexp
+    - punctuation.definition.character-class.regexp
+    - punctuation.character.set.begin.regexp
+    - punctuation.character.set.end.regexp
+    - keyword.operator.negation.regexp
+    - support.other.parenthesis.regexp
+    settings:
+      foreground: "#CE9178"
+  - scope:
+    - constant.character.character-class.regexp
+    - constant.other.character-class.set.regexp
+    - constant.other.character-class.regexp
+    - constant.character.set.regexp
+    settings:
+      foreground: "#d16969"
+  - scope:
+    - keyword.operator.or.regexp
+    - keyword.control.anchor.regexp
+    settings:
+      foreground: "#DCDCAA"
+  - scope: keyword.operator.quantifier.regexp
+    settings:
+      foreground: "#d7ba7d"
+  - scope: constant.character
+    settings:
+      foreground: "#569cd6"
+  - scope: constant.character.escape
+    settings:
+      foreground: "#d7ba7d"
+light_defaults.json:
+  "$schema": vscode://schemas/color-theme
+  name: Light Default Colors
+  colors:
+    editor.background: "#FFFFFF"
+    editor.foreground: "#000000"
+    editor.inactiveSelectionBackground: "#E5EBF1"
+    editorIndentGuide.background: "#D3D3D3"
+    editorIndentGuide.activeBackground: "#939393"
+    editor.selectionHighlightBackground: "#ADD6FF80"
+    editorSuggestWidget.background: "#F3F3F3"
+    activityBarBadge.background: "#007ACC"
+    sideBarTitle.foreground: "#6F6F6F"
+    list.hoverBackground: "#E8E8E8"
+    input.placeholderForeground: "#767676"
+    settings.textInputBorder: "#CECECE"
+    settings.numberInputBorder: "#CECECE"
+    statusBarItem.remoteForeground: "#FFF"
+    statusBarItem.remoteBackground: "#16825D"
+hc_black_defaults.json:
+  "$schema": vscode://schemas/color-theme
+  name: High Contrast Default Colors
+  colors:
+    editor.background: "#000000"
+    editor.foreground: "#FFFFFF"
+    editorIndentGuide.background: "#FFFFFF"
+    editorIndentGuide.activeBackground: "#FFFFFF"
+    statusBarItem.remoteBackground: "#00000000"
+    sideBarTitle.foreground: "#FFFFFF"
+  settings:
+  - settings:
+      foreground: "#FFFFFF"
+      background: "#000000"
+  - scope:
+    - meta.embedded
+    - source.groovy.embedded
+    settings:
+      foreground: "#FFFFFF"
+      background: "#000000"
+  - scope: emphasis
+    settings:
+      fontStyle: italic
+  - scope: strong
+    settings:
+      fontStyle: bold
+  - scope: meta.diff.header
+    settings:
+      foreground: "#000080"
+  - scope: comment
+    settings:
+      foreground: "#7ca668"
+  - scope: constant.language
+    settings:
+      foreground: "#569cd6"
+  - scope:
+    - constant.numeric
+    - constant.other.color.rgb-value
+    - constant.other.rgb-value
+    - support.constant.color
+    settings:
+      foreground: "#b5cea8"
+  - scope: constant.regexp
+    settings:
+      foreground: "#b46695"
+  - scope: constant.character
+    settings:
+      foreground: "#569cd6"
+  - scope: entity.name.tag
+    settings:
+      foreground: "#569cd6"
+  - scope: entity.name.tag.css
+    settings:
+      foreground: "#d7ba7d"
+  - scope: entity.other.attribute-name
+    settings:
+      foreground: "#9cdcfe"
+  - scope:
+    - entity.other.attribute-name.class.css
+    - entity.other.attribute-name.class.mixin.css
+    - entity.other.attribute-name.id.css
+    - entity.other.attribute-name.parent-selector.css
+    - entity.other.attribute-name.pseudo-class.css
+    - entity.other.attribute-name.pseudo-element.css
+    - source.css.less entity.other.attribute-name.id
+    - entity.other.attribute-name.attribute.scss
+    - entity.other.attribute-name.scss
+    settings:
+      foreground: "#d7ba7d"
+  - scope: invalid
+    settings:
+      foreground: "#f44747"
+  - scope: markup.underline
+    settings:
+      fontStyle: underline
+  - scope: markup.bold
+    settings:
+      fontStyle: bold
+  - scope: markup.heading
+    settings:
+      foreground: "#6796e6"
+  - scope: markup.italic
+    settings:
+      fontStyle: italic
+  - scope: markup.inserted
+    settings:
+      foreground: "#b5cea8"
+  - scope: markup.deleted
+    settings:
+      foreground: "#ce9178"
+  - scope: markup.changed
+    settings:
+      foreground: "#569cd6"
+  - name: brackets of XML/HTML tags
+    scope:
+    - punctuation.definition.tag
+    settings:
+      foreground: "#808080"
+  - scope: meta.preprocessor
+    settings:
+      foreground: "#569cd6"
+  - scope: meta.preprocessor.string
+    settings:
+      foreground: "#ce9178"
+  - scope: meta.preprocessor.numeric
+    settings:
+      foreground: "#b5cea8"
+  - scope: meta.structure.dictionary.key.python
+    settings:
+      foreground: "#9cdcfe"
+  - scope: storage
+    settings:
+      foreground: "#569cd6"
+  - scope: storage.type
+    settings:
+      foreground: "#569cd6"
+  - scope: storage.modifier
+    settings:
+      foreground: "#569cd6"
+  - scope: string
+    settings:
+      foreground: "#ce9178"
+  - scope: string.tag
+    settings:
+      foreground: "#ce9178"
+  - scope: string.value
+    settings:
+      foreground: "#ce9178"
+  - scope: string.regexp
+    settings:
+      foreground: "#d16969"
+  - name: String interpolation
+    scope:
+    - punctuation.definition.template-expression.begin
+    - punctuation.definition.template-expression.end
+    - punctuation.section.embedded
+    settings:
+      foreground: "#569cd6"
+  - name: Reset JavaScript string interpolation expression
+    scope:
+    - meta.template.expression
+    settings:
+      foreground: "#ffffff"
+  - scope:
+    - support.type.vendored.property-name
+    - support.type.property-name
+    - variable.css
+    - variable.scss
+    - variable.other.less
+    - source.coffee.embedded
+    settings:
+      foreground: "#d4d4d4"
+  - scope: keyword
+    settings:
+      foreground: "#569cd6"
+  - scope: keyword.control
+    settings:
+      foreground: "#569cd6"
+  - scope: keyword.operator
+    settings:
+      foreground: "#d4d4d4"
+  - scope:
+    - keyword.operator.new
+    - keyword.operator.expression
+    - keyword.operator.cast
+    - keyword.operator.sizeof
+    - keyword.operator.logical.python
+    settings:
+      foreground: "#569cd6"
+  - scope: keyword.other.unit
+    settings:
+      foreground: "#b5cea8"
+  - scope: support.function.git-rebase
+    settings:
+      foreground: "#d4d4d4"
+  - scope: constant.sha.git-rebase
+    settings:
+      foreground: "#b5cea8"
+  - name: coloring of the Java import and package identifiers
+    scope:
+    - storage.modifier.import.java
+    - variable.language.wildcard.java
+    - storage.modifier.package.java
+    settings:
+      foreground: "#d4d4d4"
+  - name: coloring of the TS this
+    scope: variable.language.this
+    settings:
+      foreground: "#569cd6"
+light_plus.json:
+  "$schema": vscode://schemas/color-theme
+  name: Light+ (default light)
+  include: "./light_vs.json"
+  tokenColors:
+  - name: Function declarations
+    scope:
+    - entity.name.function
+    - support.function
+    - support.constant.handlebars
+    settings:
+      foreground: "#795E26"
+  - name: Types declaration and references
+    scope:
+    - meta.return-type
+    - support.class
+    - support.type
+    - entity.name.type
+    - entity.name.class
+    - storage.type.numeric.go
+    - storage.type.byte.go
+    - storage.type.boolean.go
+    - storage.type.string.go
+    - storage.type.uintptr.go
+    - storage.type.error.go
+    - storage.type.rune.go
+    - storage.type.cs
+    - storage.type.generic.cs
+    - storage.type.modifier.cs
+    - storage.type.variable.cs
+    - storage.type.annotation.java
+    - storage.type.generic.java
+    - storage.type.java
+    - storage.type.object.array.java
+    - storage.type.primitive.array.java
+    - storage.type.primitive.java
+    - storage.type.token.java
+    - storage.type.groovy
+    - storage.type.annotation.groovy
+    - storage.type.parameters.groovy
+    - storage.type.generic.groovy
+    - storage.type.object.array.groovy
+    - storage.type.primitive.array.groovy
+    - storage.type.primitive.groovy
+    settings:
+      foreground: "#267f99"
+  - name: Types declaration and references, TS grammar specific
+    scope:
+    - meta.type.cast.expr
+    - meta.type.new.expr
+    - support.constant.math
+    - support.constant.dom
+    - support.constant.json
+    - entity.other.inherited-class
+    settings:
+      foreground: "#267f99"
+  - name: Control flow keywords
+    scope:
+    - keyword.control
+    - keyword.operator.new.cpp
+    - keyword.operator.delete.cpp
+    - keyword.other.using
+    - keyword.other.operator
+    settings:
+      foreground: "#AF00DB"
+  - name: Variable and parameter name
+    scope:
+    - variable
+    - meta.definition.variable.name
+    - support.variable
+    - entity.name.variable
+    settings:
+      foreground: "#001080"
+  - name: Object keys, TS grammar specific
+    scope:
+    - meta.object-literal.key
+    settings:
+      foreground: "#001080"
+  - name: CSS property value
+    scope:
+    - support.constant.property-value
+    - support.constant.font-name
+    - support.constant.media-type
+    - support.constant.media
+    - constant.other.color.rgb-value
+    - constant.other.rgb-value
+    - support.constant.color
+    settings:
+      foreground: "#0451a5"
+  - name: Regular expression groups
+    scope:
+    - punctuation.definition.group.regexp
+    - punctuation.definition.group.assertion.regexp
+    - punctuation.definition.character-class.regexp
+    - punctuation.character.set.begin.regexp
+    - punctuation.character.set.end.regexp
+    - keyword.operator.negation.regexp
+    - support.other.parenthesis.regexp
+    settings:
+      foreground: "#d16969"
+  - scope:
+    - constant.character.character-class.regexp
+    - constant.other.character-class.set.regexp
+    - constant.other.character-class.regexp
+    - constant.character.set.regexp
+    settings:
+      foreground: "#811f3f"
+  - scope: keyword.operator.quantifier.regexp
+    settings:
+      foreground: "#000000"
+  - scope:
+    - keyword.operator.or.regexp
+    - keyword.control.anchor.regexp
+    settings:
+      foreground: "#ff0000"
+  - scope: constant.character
+    settings:
+      foreground: "#0000ff"
+  - scope: constant.character.escape
+    settings:
+      foreground: "#ff0000"
+dimmed-monokai-color-theme.json:
+  type: dark
+  colors:
+    dropdown.background: "#525252"
+    list.activeSelectionBackground: "#707070"
+    list.focusBackground: "#707070"
+    list.inactiveSelectionBackground: "#4e4e4e"
+    list.hoverBackground: "#444444"
+    list.highlightForeground: "#e58520"
+    button.background: "#565656"
+    editor.background: "#1e1e1e"
+    editor.foreground: "#c5c8c6"
+    editor.selectionBackground: "#676b7180"
+    editor.selectionHighlightBackground: "#575b6180"
+    editor.lineHighlightBackground: "#303030"
+    editorLineNumber.activeForeground: "#949494"
+    editor.wordHighlightBackground: "#4747a180"
+    editor.wordHighlightStrongBackground: "#6767ce80"
+    editorCursor.foreground: "#c07020"
+    editorWhitespace.foreground: "#505037"
+    editorIndentGuide.background: "#505037"
+    editorIndentGuide.activeBackground: "#707057"
+    editorGroupHeader.tabsBackground: "#282828"
+    tab.inactiveBackground: "#404040"
+    tab.border: "#303030"
+    tab.modifiedBorder: "#6796e6"
+    tab.inactiveForeground: "#d8d8d8"
+    peekView.border: "#3655b5"
+    panelTitle.activeForeground: "#ffffff"
+    statusBar.background: "#505050"
+    statusBar.debuggingBackground: "#505050"
+    statusBar.noFolderBackground: "#505050"
+    titleBar.activeBackground: "#505050"
+    statusBarItem.remoteBackground: "#3655b5"
+    activityBar.background: "#353535"
+    activityBar.foreground: "#ffffff"
+    activityBarBadge.background: "#3655b5"
+    sideBar.background: "#272727"
+    sideBarSectionHeader.background: "#505050"
+    menu.background: "#272727"
+    menu.foreground: "#CCCCCC"
+    pickerGroup.foreground: "#b0b0b0"
+    terminal.ansiWhite: "#ffffff"
+    inputOption.activeBorder: "#3655b5"
+    focusBorder: "#3655b5"
+  tokenColors:
+  - settings:
+      background: "#1e1e1e"
+      foreground: "#C5C8C6"
+  - name: By uonick
+    settings:
+      background: "#202025ff"
+      foreground: "#c5c8c6ff"
+  - scope:
+    - meta.embedded
+    - source.groovy.embedded
+    settings:
+      background: "#1e1e1e"
+      foreground: "#C5C8C6"
+  - name: Comment
+    scope: comment
+    settings:
+      fontStyle: ''
+      foreground: "#9A9B99"
+  - name: String
+    scope: string
+    settings:
+      fontStyle: ''
+      foreground: "#9AA83A"
+  - name: String Embedded Source
+    scope: string source
+    settings:
+      fontStyle: ''
+      foreground: "#D08442"
+  - name: Number
+    scope: constant.numeric
+    settings:
+      fontStyle: ''
+      foreground: "#6089B4"
+  - name: Built-in constant
+    scope: constant.language
+    settings:
+      fontStyle: ''
+      foreground: "#408080"
+  - name: User-defined constant
+    scope: constant.character, constant.other
+    settings:
+      fontStyle: ''
+      foreground: "#8080FF"
+      background: "#1e1e1e"
+  - name: Keyword
+    scope: keyword
+    settings:
+      fontStyle: ''
+      foreground: "#6089B4"
+  - name: Support
+    scope: support
+    settings:
+      fontStyle: ''
+      foreground: "#C7444A"
+  - name: Storage
+    scope: storage
+    settings:
+      fontStyle: ''
+      foreground: "#9872A2"
+  - name: Class name
+    scope: entity.name.class, entity.name.type
+    settings:
+      fontStyle: ''
+      foreground: "#9B0000"
+      background: "#1E1E1E"
+  - name: Inherited class
+    scope: entity.other.inherited-class
+    settings:
+      fontStyle: ''
+      foreground: "#C7444A"
+  - name: Function name
+    scope: entity.name.function
+    settings:
+      fontStyle: ''
+      foreground: "#CE6700"
+  - name: Function argument
+    scope: variable.parameter
+    settings:
+      fontStyle: ''
+      foreground: "#6089B4"
+  - name: Tag name
+    scope: entity.name.tag
+    settings:
+      fontStyle: ''
+      foreground: "#9872A2"
+  - name: Tag attribute
+    scope: entity.other.attribute-name
+    settings:
+      fontStyle: ''
+      foreground: "#9872A2"
+  - name: Library function
+    scope: support.function
+    settings:
+      fontStyle: ''
+      foreground: "#9872A2"
+  - name: Keyword
+    scope: keyword
+    settings:
+      fontStyle: ''
+      foreground: "#676867"
+  - name: Class Variable
+    scope: variable.other, variable.js, punctuation.separator.variable
+    settings:
+      fontStyle: ''
+      foreground: "#6089B4"
+  - name: Meta Brace
+    scope: punctuation.section.embedded -(source string source punctuation.section.embedded),
+      meta.brace.erb.html
+    settings:
+      fontStyle: ''
+      foreground: "#008200"
+  - name: Invalid
+    scope: invalid
+    settings:
+      fontStyle: ''
+      foreground: "#FF0B00"
+  - name: Normal Variable
+    scope: variable.other.php, variable.other.normal
+    settings:
+      fontStyle: ''
+      foreground: "#6089B4"
+  - name: Function Object
+    scope: meta.function-call.object
+    settings:
+      fontStyle: ''
+      foreground: "#9872A2"
+  - name: Function Call Variable
+    scope: variable.other.property
+    settings:
+      fontStyle: ''
+      foreground: "#9872A2"
+  - name: Keyword Control
+    scope:
+    - keyword.control
+    - keyword.operator.new.cpp
+    - keyword.operator.delete.cpp
+    - keyword.other.using
+    - keyword.other.operator
+    settings:
+      fontStyle: ''
+      foreground: "#9872A2"
+  - name: Tag
+    scope: meta.tag
+    settings:
+      fontStyle: ''
+      foreground: "#D0B344"
+  - name: Tag Name
+    scope: entity.name.tag
+    settings:
+      fontStyle: ''
+      foreground: "#6089B4"
+  - name: Doctype
+    scope: meta.doctype, meta.tag.sgml-declaration.doctype, meta.tag.sgml.doctype
+    settings:
+      fontStyle: ''
+      foreground: "#9AA83A"
+  - name: Tag Inline Source
+    scope: meta.tag.inline source, text.html.php.source
+    settings:
+      fontStyle: ''
+      foreground: "#9AA83A"
+  - name: Tag Other
+    scope: meta.tag.other, entity.name.tag.style, entity.name.tag.script, meta.tag.block.script,
+      source.js.embedded punctuation.definition.tag.html, source.css.embedded punctuation.definition.tag.html
+    settings:
+      fontStyle: ''
+      foreground: "#9872A2"
+  - name: Tag Attribute
+    scope: entity.other.attribute-name, meta.tag punctuation.definition.string
+    settings:
+      fontStyle: ''
+      foreground: "#D0B344"
+  - name: Tag Value
+    scope: meta.tag string -source -punctuation, text source text meta.tag string
+      -punctuation
+    settings:
+      fontStyle: ''
+      foreground: "#6089B4"
+  - name: Meta Brace
+    scope: punctuation.section.embedded -(source string source punctuation.section.embedded),
+      meta.brace.erb.html
+    settings:
+      fontStyle: ''
+      foreground: "#D0B344"
+  - name: HTML ID
+    scope: meta.toc-list.id
+    settings:
+      foreground: "#9AA83A"
+  - name: HTML String
+    scope: string.quoted.double.html, punctuation.definition.string.begin.html, punctuation.definition.string.end.html
+    settings:
+      fontStyle: ''
+      foreground: "#9AA83A"
+  - name: HTML Tags
+    scope: punctuation.definition.tag.html, punctuation.definition.tag.begin, punctuation.definition.tag.end
+    settings:
+      fontStyle: ''
+      foreground: "#6089B4"
+  - name: CSS ID
+    scope: meta.selector.css entity.other.attribute-name.id
+    settings:
+      fontStyle: ''
+      foreground: "#9872A2"
+  - name: CSS Property Name
+    scope: support.type.property-name.css
+    settings:
+      fontStyle: ''
+      foreground: "#676867"
+  - name: CSS Property Value
+    scope: meta.property-group support.constant.property-value.css, meta.property-value
+      support.constant.property-value.css
+    settings:
+      fontStyle: ''
+      foreground: "#C7444A"
+  - name: JavaScript Variable
+    scope: variable.language.js
+    settings:
+      foreground: "#CC555A"
+  - name: Template Definition
+    scope:
+    - punctuation.definition.template-expression
+    - punctuation.section.embedded.coffee
+    settings:
+      foreground: "#D08442"
+  - name: Reset JavaScript string interpolation expression
+    scope:
+    - meta.template.expression
+    settings:
+      foreground: "#C5C8C6"
+  - name: PHP Function Call
+    scope: meta.function-call.object.php
+    settings:
+      fontStyle: ''
+      foreground: "#D0B344"
+  - name: PHP Single Quote HMTL Fix
+    scope: punctuation.definition.string.end.php, punctuation.definition.string.begin.php
+    settings:
+      foreground: "#9AA83A"
+  - name: PHP Parenthesis HMTL Fix
+    scope: source.php.embedded.line.html
+    settings:
+      foreground: "#676867"
+  - name: PHP Punctuation Embedded
+    scope: punctuation.section.embedded.begin.php, punctuation.section.embedded.end.php
+    settings:
+      fontStyle: ''
+      foreground: "#D08442"
+  - name: Ruby Symbol
+    scope: constant.other.symbol.ruby
+    settings:
+      fontStyle: ''
+      foreground: "#9AA83A"
+  - name: Ruby Variable
+    scope: variable.language.ruby
+    settings:
+      fontStyle: ''
+      foreground: "#D0B344"
+  - name: Ruby Special Method
+    scope: keyword.other.special-method.ruby
+    settings:
+      fontStyle: ''
+      foreground: "#D9B700"
+  - name: Ruby Embedded Source
+    scope:
+    - punctuation.section.embedded.begin.ruby
+    - punctuation.section.embedded.end.ruby
+    settings:
+      foreground: "#D08442"
+  - name: SQL
+    scope: keyword.other.DML.sql
+    settings:
+      fontStyle: ''
+      foreground: "#D0B344"
+  - name: 'diff: header'
+    scope: meta.diff, meta.diff.header
+    settings:
+      background: "#b58900"
+      fontStyle: italic
+      foreground: "#E0EDDD"
+  - name: 'diff: deleted'
+    scope: markup.deleted
+    settings:
+      background: "#eee8d5"
+      fontStyle: ''
+      foreground: "#dc322f"
+  - name: 'diff: changed'
+    scope: markup.changed
+    settings:
+      background: "#eee8d5"
+      fontStyle: ''
+      foreground: "#cb4b16"
+  - name: 'diff: inserted'
+    scope: markup.inserted
+    settings:
+      background: "#eee8d5"
+      foreground: "#219186"
+  - name: Markup Quote
+    scope: markup.quote
+    settings:
+      foreground: "#9872A2"
+  - name: Markup Lists
+    scope: markup.list
+    settings:
+      foreground: "#9AA83A"
+  - name: Markup Styling
+    scope: markup.bold, markup.italic
+    settings:
+      foreground: "#6089B4"
+  - name: Markup Inline
+    scope: markup.inline.raw
+    settings:
+      fontStyle: ''
+      foreground: "#FF0080"
+  - name: Markup Headings
+    scope: markup.heading
+    settings:
+      foreground: "#D0B344"
+  - name: Markup Setext Header
+    scope: markup.heading.setext
+    settings:
+      fontStyle: ''
+      foreground: "#D0B344"
+  - scope: token.info-token
+    settings:
+      foreground: "#6796e6"
+  - scope: token.warn-token
+    settings:
+      foreground: "#cd9731"
+  - scope: token.error-token
+    settings:
+      foreground: "#f44747"
+  - scope: token.debug-token
+    settings:
+      foreground: "#b267e6"
+  - name: this.self
+    scope: variable.language
+    settings:
+      foreground: "#c7444a"
+kimbie-dark-color-theme.json:
+  name: Kimbie Dark
+  type: dark
+  colors:
+    input.background: "#51412c"
+    dropdown.background: "#51412c"
+    editor.background: "#221a0f"
+    editor.foreground: "#d3af86"
+    focusBorder: "#a57a4c"
+    list.highlightForeground: "#e3b583"
+    list.activeSelectionBackground: "#7c5021"
+    list.hoverBackground: "#7c502166"
+    list.focusBackground: "#7c5021AA"
+    list.inactiveSelectionBackground: "#645342"
+    pickerGroup.foreground: "#e3b583"
+    pickerGroup.border: "#e3b583"
+    inputOption.activeBorder: "#a57a4c"
+    selection.background: "#84613daa"
+    editor.selectionBackground: "#84613daa"
+    editorWidget.background: "#131510"
+    editorHoverWidget.background: "#221a14"
+    editorGroupHeader.tabsBackground: "#131510"
+    editorLineNumber.activeForeground: "#adadad"
+    tab.inactiveBackground: "#131510"
+    tab.modifiedBorder: "#cd9731"
+    titleBar.activeBackground: "#423523"
+    statusBar.background: "#423523"
+    statusBar.debuggingBackground: "#423523"
+    statusBar.noFolderBackground: "#423523"
+    statusBarItem.remoteBackground: "#6e583b"
+    activityBar.background: "#221a0f"
+    activityBar.foreground: "#d3af86"
+    sideBar.background: "#362712"
+    menu.background: "#362712"
+    menu.foreground: "#CCCCCC"
+    editor.lineHighlightBackground: "#5e452b"
+    editorCursor.foreground: "#d3af86"
+    editorWhitespace.foreground: "#a57a4c"
+    peekViewTitle.background: "#362712"
+    peekView.border: "#5e452b"
+    peekViewResult.background: "#362712"
+    peekViewEditor.background: "#221a14"
+    peekViewEditor.matchHighlightBackground: "#84613daa"
+    button.background: "#6e583b"
+    inputValidation.infoBorder: "#1b60a5"
+    inputValidation.infoBackground: "#2b2a42"
+    inputValidation.warningBackground: "#51412c"
+    inputValidation.errorBackground: "#5f0d0d"
+    inputValidation.errorBorder: "#9d2f23"
+    badge.background: "#7f5d38"
+    progressBar.background: "#7f5d38"
+  tokenColors:
+  - settings:
+      background: "#221a0f"
+      foreground: "#d3af86"
+  - scope:
+    - meta.embedded
+    - source.groovy.embedded
+    settings:
+      background: "#221a0f"
+      foreground: "#d3af86"
+  - name: Text
+    scope: variable.parameter.function
+    settings:
+      foreground: "#d3af86"
+  - name: Comments
+    scope:
+    - comment
+    - punctuation.definition.comment
+    settings:
+      foreground: "#a57a4c"
+  - name: Punctuation
+    scope:
+    - punctuation.definition.string
+    - punctuation.definition.variable
+    - punctuation.definition.string
+    - punctuation.definition.parameters
+    - punctuation.definition.string
+    - punctuation.definition.array
+    settings:
+      foreground: "#d3af86"
+  - name: Delimiters
+    scope: none
+    settings:
+      foreground: "#d3af86"
+  - name: Operators
+    scope: keyword.operator
+    settings:
+      foreground: "#d3af86"
+  - name: Keywords
+    scope:
+    - keyword
+    - keyword.control
+    - keyword.operator.new.cpp
+    - keyword.operator.delete.cpp
+    - keyword.other.using
+    - keyword.other.operator
+    settings:
+      foreground: "#98676a"
+  - name: Variables
+    scope: variable
+    settings:
+      foreground: "#dc3958"
+  - name: Functions
+    scope:
+    - entity.name.function
+    - meta.require
+    - support.function.any-method
+    settings:
+      foreground: "#8ab1b0"
+  - name: Classes
+    scope:
+    - support.class
+    - entity.name.class
+    - entity.name.type
+    settings:
+      foreground: "#f06431"
+  - name: Methods
+    scope: keyword.other.special-method
+    settings:
+      foreground: "#8ab1b0"
+  - name: Storage
+    scope: storage
+    settings:
+      foreground: "#98676a"
+  - name: Support
+    scope: support.function
+    settings:
+      foreground: "#7e602c"
+  - name: Strings, Inherited Class
+    scope:
+    - string
+    - constant.other.symbol
+    - entity.other.inherited-class
+    settings:
+      foreground: "#889b4a"
+  - name: Integers
+    scope: constant.numeric
+    settings:
+      foreground: "#f79a32"
+  - name: Floats
+    scope: none
+    settings:
+      foreground: "#f79a32"
+  - name: Boolean
+    scope: none
+    settings:
+      foreground: "#f79a32"
+  - name: Constants
+    scope: constant
+    settings:
+      foreground: "#f79a32"
+  - name: Tags
+    scope: entity.name.tag
+    settings:
+      foreground: "#dc3958"
+  - name: Attributes
+    scope: entity.other.attribute-name
+    settings:
+      foreground: "#f79a32"
+  - name: Attribute IDs
+    scope:
+    - entity.other.attribute-name.id
+    - punctuation.definition.entity
+    settings:
+      foreground: "#8ab1b0"
+  - name: Selector
+    scope: meta.selector
+    settings:
+      foreground: "#98676a"
+  - name: Values
+    scope: none
+    settings:
+      foreground: "#f79a32"
+  - name: Headings
+    scope:
+    - markup.heading
+    - markup.heading.setext
+    - punctuation.definition.heading
+    - entity.name.section
+    settings:
+      fontStyle: ''
+      foreground: "#8ab1b0"
+  - name: Units
+    scope: keyword.other.unit
+    settings:
+      foreground: "#f79a32"
+  - name: Bold
+    scope:
+    - markup.bold
+    - punctuation.definition.bold
+    settings:
+      fontStyle: bold
+      foreground: "#f06431"
+  - name: Italic
+    scope:
+    - markup.italic
+    - punctuation.definition.italic
+    settings:
+      fontStyle: italic
+      foreground: "#98676a"
+  - name: Code
+    scope: markup.inline.raw
+    settings:
+      foreground: "#889b4a"
+  - name: Link Text
+    scope: string.other.link
+    settings:
+      foreground: "#dc3958"
+  - name: Link Url
+    scope: meta.link
+    settings:
+      foreground: "#f79a32"
+  - name: Lists
+    scope: markup.list
+    settings:
+      foreground: "#dc3958"
+  - name: Quotes
+    scope: markup.quote
+    settings:
+      foreground: "#f79a32"
+  - name: Separator
+    scope: meta.separator
+    settings:
+      background: "#84613d"
+      foreground: "#d3af86"
+  - name: Inserted
+    scope: markup.inserted
+    settings:
+      foreground: "#889b4a"
+  - name: Deleted
+    scope: markup.deleted
+    settings:
+      foreground: "#dc3958"
+  - name: Changed
+    scope: markup.changed
+    settings:
+      foreground: "#98676a"
+  - name: Colors
+    scope: constant.other.color
+    settings:
+      foreground: "#7e602c"
+  - name: Regular Expressions
+    scope: string.regexp
+    settings:
+      foreground: "#7e602c"
+  - name: Escape Characters
+    scope: constant.character.escape
+    settings:
+      foreground: "#7e602c"
+  - name: Embedded
+    scope:
+    - punctuation.section.embedded
+    - variable.interpolation
+    settings:
+      foreground: "#088649"
+  - name: Invalid
+    scope: invalid.illegal
+    settings:
+      foreground: "#dc3958"
