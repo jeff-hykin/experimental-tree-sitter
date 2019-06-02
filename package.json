@@ -3,7 +3,7 @@
 	"displayName": "Experimental Tree Sitter",
 	"description": "Syntax highlighting based on Tree-sitter",
 	"homepage": "https://github.com/jeff-hykin/experimental-tree-sitter",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"publisher": "jeff-hykin",
 	"license": "MIT",
 	"icon": "images/syntax.png",
