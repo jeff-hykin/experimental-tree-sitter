@@ -2,13 +2,6 @@
 supported_languages:
     - c
     - cpp
-    - css
-    - go
-    - html
-    - javascript
-    - python
-    - ruby
-    - typescript
 supported_terms:
     - type
     - namespace
