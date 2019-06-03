@@ -9,3 +9,12 @@ coloring of the TextMate scopes.
 
 # Timeline
 It will be awhile, likely late July 2019, before the next major improvement.
+
+
+# Goals
+Have a VS Code extension that
+- works with all themes
+- provides objectively improved coloration of code (a superset-improvement)
+- replaces/disables TextMate Parsing (for less CPU usage)
+- provides faster coloring than the TextMate coloration
+- makes theme-making easier
