@@ -8,4 +8,4 @@ The only major theme supported is the stock VS Code theme, and the only supporte
 coloring of the TextMate scopes.
 
 # Timeline
-It will be awhile likely more than a month (late July 2019), before there is widespread theme support.
+It will be awhile likely late July 2019, before the next major improvement.
