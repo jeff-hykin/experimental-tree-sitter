@@ -1,4 +1,4 @@
-# Tree Sitter for VSCode [Deprecated]
+# Tree Sitter for VSCode
 
 **With the improving support for custom syntax coloring through language server, this extension is no longer needed**
 

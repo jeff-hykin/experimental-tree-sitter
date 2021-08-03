@@ -1,14 +1,13 @@
 {
-	"name": "vscode-tree-sitter",
-	"displayName": "Tree Sitter [Deprecated]",
-	"description": "Accurate syntax coloring with tree-sitter",
-	"icon": "tree-sitter-small.png",
-	"version": "0.1.26",
-	"preview": true,
-	"publisher": "georgewfraser",
+    "name": "experimental-tree-sitter",
+	"displayName": "Experimental Tree Sitter",
+	"description": "Syntax highlighting based on Tree-sitter",
+	"homepage": "https://github.com/jeff-hykin/experimental-tree-sitter",
+	"version": "0.2.1",
+	"publisher": "jeff-hykin",
+	"icon": "images/syntax.png",
 	"repository": {
-		"type": "git",
-		"url": "https://github.com/georgewfraser/vscode-tree-sitter"
+		"url": "https://github.com/jeff-hykin/tree-sitter"
 	},
 	"license": "MIT",
 	"extensionKind": [
