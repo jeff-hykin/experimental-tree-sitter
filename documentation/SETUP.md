@@ -34,4 +34,4 @@ TLDR: install `nix`, run `commands/start`, and everything will be auto installed
 * Actually run some code
     * run `commands/start` to get into the project environment
         * Note: this will almost certainly take a while the first time because it will auto-install exact versions of everything: `node`, `python`, `ruby`, all modules for them, etc
-    * run `project commands` to list the project commands
+    * run `project` (with no arguments) to list the project commands

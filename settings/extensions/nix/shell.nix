@@ -38,6 +38,7 @@ let
             if [[ "$OSTYPE" == "linux-gnu" ]] 
             then
                 true # add important (LD_LIBRARY_PATH, PATH, etc) nix-Linux code here
+                export EXTRA_CCFLAGS="$EXTRA_CCFLAGS:-I/usr/include"
             fi
         '';
         # for python with CUDA 
@@ -111,8 +112,7 @@ let
         shellCode = ''
             if [[ "$OSTYPE" = "darwin"* ]] 
             then
-                true # add important nix-MacOS code here
-                echo "CoreServices: ${main.packages.darwin.apple_sdk.frameworks.CoreServices}/Library/Frameworks/CoreServices.framework/Headers/"
+                # add CoreServices to compiler 
                 export EXTRA_CCFLAGS="$EXTRA_CCFLAGS:-I/usr/include:${main.packages.darwin.apple_sdk.frameworks.CoreServices}/Library/Frameworks/CoreServices.framework/Headers/"
             fi
         '';
@@ -138,7 +138,6 @@ in
             
             # provide access to ncurses for nice terminal interactions
             export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:${main.packages.ncurses}/lib"
-            # export EXTRA_CCFLAGS="$EXTRA_CCFLAGS:-I/usr/include"
             export LD_LIBRARY_PATH="${main.makeLibraryPath [ main.packages.glib ] }:$LD_LIBRARY_PATH"
         '';
     }
