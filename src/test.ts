@@ -1,5 +1,6 @@
+import {MapperFunction, Range} from './mapper_tools'
 import Parser = require('web-tree-sitter')
-import colors = require('./colors')
+let mappers = require('./mappers')
 
 type Assert = [string, string|{not:string}]
 type TestCase = [string, ...Assert[]]
@@ -167,7 +168,7 @@ const goTests: TestCase[] = [
         ['i', {not: 'markup.underline'}]
     ],
 ]
-test(goTests, 'parsers/tree-sitter-go.wasm', colors.colorGo)
+test(goTests, 'parsers/tree-sitter-go.wasm', mappers.mapGo)
 
 const rubyTests: TestCase[] = [
     [
@@ -241,9 +242,9 @@ const rubyTests: TestCase[] = [
         ['bar', 'entity.name.function'],
     ],
 ]
-test(rubyTests, 'parsers/tree-sitter-ruby.wasm', colors.colorRuby)
+test(rubyTests, 'parsers/tree-sitter-ruby.wasm', mappers.mapRuby)
 
-async function test(testCases: TestCase[], wasm: string, color: colors.ColorFunction) {
+async function test(testCases: TestCase[], wasm: string, color: MapperFunction) {
     await Parser.init()
     const parser = new Parser()
     const lang = await Parser.Language.load(wasm)

@@ -1,20 +1,29 @@
 {
 	"compilerOptions": {
-		"module": "commonjs",
-		"target": "es6",
-		"outDir": "out",
+        "target": "es6",
 		"lib": [
 			"es6"
 		],
+        "allowJs": true,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "strict": false,
+        "forceConsistentCasingInFileNames": false,
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": false,
+        "noEmit": true,
+        "jsx": "preserve",
+        "noImplicitAny": false,
+		"module": "commonjs",
+		"outDir": "out",
+        "checkJs": false,
 		"sourceMap": true,
-		"rootDir": "src",
-		/* Strict Type-Checking Option */
-		"strict": true,   /* enable all strict type-checking options */
-		/* Additional Checks */
-		"noUnusedLocals": true /* Report errors on unused locals. */
+		"noUnusedParameters": false,
+		"noUnusedLocals": false
 		// "noImplicitReturns": true, /* Report error when not all code paths in function return a value. */
 		// "noFallthroughCasesInSwitch": true, /* Report errors for fallthrough cases in switch statement. */
-		// "noUnusedParameters": true,  /* Report errors on unused parameters. */
 	},
 	"exclude": [
 		"examples",

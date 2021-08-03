@@ -1,5 +1,5 @@
 {
-    "name": "experimental-tree-sitter",
+	"name": "experimental-tree-sitter",
 	"displayName": "Experimental Tree Sitter",
 	"description": "Syntax highlighting based on Tree-sitter",
 	"homepage": "https://github.com/jeff-hykin/experimental-tree-sitter",
@@ -96,7 +96,7 @@
 	},
 	"dependencies": {
 		"jsonc-parser": "^2.1.0",
-		"tar": ">=4.4.15",
+		"tar": "^4.4.15",
 		"web-tree-sitter": "^0.16.2"
 	}
 }

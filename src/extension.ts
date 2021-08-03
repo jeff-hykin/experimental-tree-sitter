@@ -1,18 +1,18 @@
 import * as vscode from 'vscode'
-import * as Parser from 'web-tree-sitter'
+import Parser = require('web-tree-sitter')
 import * as path from 'path'
 import * as scopes from './scopes'
-import * as colors from './colors'
+import {MapperFunction, Range} from './mapper_tools'
 
 // Be sure to declare the language in package.json and include a minimalist grammar.
-const languages: {[id: string]: {module: string, color: colors.ColorFunction, parser?: Parser}} = {
-	'go': {module: 'tree-sitter-go', color: colors.colorGo},
-	'cpp': {module: 'tree-sitter-cpp', color: colors.colorCpp},
-	'rust': {module: 'tree-sitter-rust', color: colors.colorRust},
-	'ruby': {module: 'tree-sitter-ruby', color: colors.colorRuby},
-	'typescript': {module: 'tree-sitter-typescript', color: colors.colorTypescript},
+const languages: {[id: string]: {module: string, color: MapperFunction, parser?: Parser}} = {
+	'go': {module: 'tree-sitter-go', color: require("./mappers/go") },
+	'cpp': {module: 'tree-sitter-cpp', color: require("./mappers/cpp") },
+	'rust': {module: 'tree-sitter-rust', color: require("./mappers/rust") },
+	'ruby': {module: 'tree-sitter-ruby', color: require("./mappers/ruby") },
+	'typescript': {module: 'tree-sitter-typescript', color: require("./mappers/typescript") },
 	// TODO there is a separate JS grammar now
-	'javascript': {module: 'tree-sitter-javascript', color: colors.colorTypescript},
+	// 'javascript': {module: 'tree-sitter-javascript', color: colors.colorTypescript},
 }
 
 // Create decoration types from scopes lazily
@@ -73,7 +73,7 @@ async function loadStyles() {
 }
 
 // For some reason this crashes if we put it inside activate
-const initParser = Parser.init() // TODO this isn't a field, suppress package member coloring like Go
+const initParser = eval("Parser.init()") // TODO this isn't a field, suppress package member coloring like Go
 
 // Called when the extension is first activated by user opening a file with the appropriate language
 export async function activate(context: vscode.ExtensionContext) {
@@ -194,7 +194,7 @@ function visibleLines(editor: vscode.TextEditor) {
 	})
 }
 
-function range(x: colors.Range): vscode.Range {
+function range(x: Range): vscode.Range {
 	return new vscode.Range(x.start.row, x.start.column, x.end.row, x.end.column)
 }
 
