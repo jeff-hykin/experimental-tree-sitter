@@ -11,8 +11,7 @@
 		"url": "https://github.com/jeff-hykin/tree-sitter"
 	},
 	"scripts": {
-		"vscode:prepublish": "npm run compile",
-		"compile": "echo compile",
+        "esbuild": "esbuild ./extension.js --bundle --outfile=out/main.js --external:vscode --format=cjs --platform=node --sourcemap",
 		"postinstall": "node ./node_modules/vscode/bin/install",
 		"debug": "echo debugging"
 	},

@@ -10,7 +10,6 @@
             "stopOnEntry": false,
             "sourceMaps": true,
             "outFiles": [ "${workspaceRoot}/out/**/*.js" ],
-            "preLaunchTask": "npm: debug"
         }
 	]
 }

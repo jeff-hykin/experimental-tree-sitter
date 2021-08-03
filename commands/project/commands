@@ -6,6 +6,5 @@
     echo 
     echo "examples:"
     echo "    project clean"
-    echo "    _ clean"
     echo "    npm run test"
     
