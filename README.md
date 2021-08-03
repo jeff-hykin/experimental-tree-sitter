@@ -18,3 +18,7 @@ Have a VS Code extension that
 - replaces/disables TextMate Parsing (for less CPU usage)
 - provides faster coloring than the TextMate coloration
 - makes theme-making easier
+
+# Setup for contributions
+
+Everything is detailed in the `documentation/SETUP.md`!
