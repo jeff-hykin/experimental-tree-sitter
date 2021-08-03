@@ -112,7 +112,7 @@ let
         shellCode = ''
             if [[ "$OSTYPE" = "darwin"* ]] 
             then
-                # add CoreServices to compiler 
+                true # add important nix-MacOS code here
                 export EXTRA_CCFLAGS="$EXTRA_CCFLAGS:-I/usr/include:${main.packages.darwin.apple_sdk.frameworks.CoreServices}/Library/Frameworks/CoreServices.framework/Headers/"
             fi
         '';
