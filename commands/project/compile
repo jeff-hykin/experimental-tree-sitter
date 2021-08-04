@@ -5,9 +5,9 @@
 #   can be useful for fixing corrupted setups
 
 # remove any temp pipes (messes with the packager for some reason)
-rm -rf "$PROJECTR_FOLDER/settings/home/tmp.cleanable/"
+rm -rf "$PROJECTR_FOLDER/settings/home/tmp.cleanable/"; mkdir -p "$PROJECTR_FOLDER/settings/home/tmp.cleanable/"
 
 # remove previous build (not doing so makes tsc crash)
 rm -rf ./out; rm -f build.vsix
 # build typescript then package 
-tsc -p ./ && vsce package -o build.vsix
+tsc -p ./ && rm -f **/*.map && vsce package -o build.vsix

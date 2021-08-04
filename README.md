@@ -6,23 +6,23 @@ This extension gives VSCode support for [tree-sitter](http://tree-sitter.github.
 
 ## Go
 
-![Go](./screenshots/go.png)
+![Go](./images/go.png)
 
 ## Rust
 
-![Rust](./screenshots/rust.png)
+![Rust](./images/rust.png)
 
 ## C++
 
-![C++](./screenshots/cpp.png)
+![C++](./images/cpp.png)
 
 ## Ruby
 
-![Ruby](./screenshots/ruby.png)
+![Ruby](./images/ruby.png)
 
 ## Javascript / Typescript
 
-![Typescript](./screenshots/typescript.png)
+![Typescript](./images/typescript.png)
 
 ## Contributing
 

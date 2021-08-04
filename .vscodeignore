@@ -11,3 +11,17 @@ vsc-extension-quickstart.md
 examples/**
 settings/**
 commands/**
+
+# # Ignore everything
+# *
+# **/*
+# # Whitelist
+# # !.vscodeignore
+# # !package.json
+# # !README.md
+# # !LICENSE.md
+# # !images/**/*
+# # !out/**/*
+# # !textmate/**/*
+# # !parsers/**/*
+# # !node_modules/**/*
