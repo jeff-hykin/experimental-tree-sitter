@@ -4,8 +4,10 @@
 #   this just removes all of the can-be deleted files
 #   can be useful for fixing corrupted setups
 
-tsc -p ./
 # remove any temp pipes (messes with the packager for some reason)
 rm -rf "$PROJECTR_FOLDER/settings/home/tmp.cleanable/"
-# then package 
-vsce package -o build.vsix
+
+# remove previous build (not doing so makes tsc crash)
+rm -rf ./out; rm -f build.vsix
+# build typescript then package 
+tsc -p ./ && vsce package -o build.vsix
